@@ -198,27 +198,16 @@
 }
 
 @layer components {
-  /* Custom Geometric Background Pattern - Dots to Cubes */
+  /* Plain Hexagon Background Pattern */
   .geometric-bg, .hexagon-bg, .cube-bg, .dot-grid-bg, .stripe-bg, .chevron-bg {
     background-color: white;
     background-image: 
-      /* Top dots pattern */
-      radial-gradient(circle, black 1.5px, transparent 1.5px),
-      /* Bottom isometric cubes */
-      linear-gradient(30deg, black 2px, transparent 2px),
-      linear-gradient(150deg, black 2px, transparent 2px),
-      linear-gradient(90deg, black 1px, transparent 1px);
-    background-size: 
-      25px 25px,
-      40px 23px,
-      40px 23px,
-      20px 40px;
-    background-position: 
-      0 0,
-      0 60%,
-      20px 60%,
-      10px 60%;
-    opacity: 0.9;
+      linear-gradient(60deg, black 1px, transparent 1px),
+      linear-gradient(120deg, black 1px, transparent 1px),
+      linear-gradient(0deg, black 1px, transparent 1px);
+    background-size: 40px 23px, 40px 23px, 20px 40px;
+    background-position: 0 0, 20px 11.5px, 10px 0;
+    opacity: 0.8;
   }
 
   /* Remove any background overlays */
