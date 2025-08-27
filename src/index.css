@@ -270,11 +270,12 @@
 
   /* Mathematical precision animations */
   .animate-geometric {
-    animation: geometric-pulse 3s ease-in-out infinite;
+    animation: none;
   }
 
+  /* Keep text fully opaque; disable previous opacity pulse */
   @keyframes geometric-pulse {
-    0%, 100% { opacity: 0.15; }
-    50% { opacity: 0.25; }
+    0%, 100% { opacity: 1; }
+    50% { opacity: 1; }
   }
 }
