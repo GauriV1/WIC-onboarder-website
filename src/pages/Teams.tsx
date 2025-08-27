@@ -70,7 +70,7 @@ export default function Teams() {
       <section className="py-16 px-4 hexagon-bg animate-geometric">
         <div className="relative container max-w-4xl mx-auto text-center">
           <h1 className="mb-6">Our Teams</h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <p className="text-xl text-black leading-relaxed font-medium">
             Meet the dedicated students and faculty who drive WIC's research excellence 
             and commitment to learning.
           </p>
@@ -82,7 +82,7 @@ export default function Teams() {
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">Spring 2025 Leadership Team</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-black max-w-2xl mx-auto font-medium">
               Our current student leaders coordinate research activities and mentor members. 
               The Fall 2025 roster is being finalized for the upcoming academic year.
             </p>
@@ -106,7 +106,7 @@ export default function Teams() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-black leading-relaxed font-medium">
                     {member.bio}
                   </p>
                 </CardContent>
@@ -121,7 +121,7 @@ export default function Teams() {
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">Research Divisions</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-black max-w-2xl mx-auto font-medium">
               Our research is organized into specialized teams, each focusing on different 
               aspects of investment analysis and market understanding.
             </p>
@@ -139,15 +139,15 @@ export default function Teams() {
                     <div className="grid grid-cols-3 gap-4 text-sm">
                       <div>
                         <p className="font-semibold text-xs uppercase tracking-wider mb-1">Head</p>
-                        <p className="text-muted-foreground">{division.head || "TBD"}</p>
+                        <p className="text-black font-medium">{division.head || "TBD"}</p>
                       </div>
                       <div>
                         <p className="font-semibold text-xs uppercase tracking-wider mb-1">Analyst</p>
-                        <p className="text-muted-foreground">{division.analyst || "TBD"}</p>
+                        <p className="text-black font-medium">{division.analyst || "TBD"}</p>
                       </div>
                       <div>
                         <p className="font-semibold text-xs uppercase tracking-wider mb-1">Intern</p>
-                        <p className="text-muted-foreground">{division.intern || "TBD"}</p>
+                        <p className="text-black font-medium">{division.intern || "TBD"}</p>
                       </div>
                     </div>
                   </div>
@@ -163,7 +163,7 @@ export default function Teams() {
         <div className="container max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">Advisors & Mentors</h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-black font-medium">
               WIC benefits from guidance by experienced professionals and dedicated faculty.
             </p>
           </div>
@@ -175,7 +175,7 @@ export default function Teams() {
                 <CardDescription>Professor Ruoning Han, Economics Department</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-black font-medium">
                   Provides academic leadership and ensures WIC's activities align with educational 
                   objectives while maintaining appropriate risk management practices.
                 </p>
@@ -194,7 +194,7 @@ export default function Teams() {
                 <CardDescription>Alumni and professional network</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-black font-medium">
                   Our alumni working in finance provide mentorship, guest lectures, and career 
                   guidance. Current mentors work at firms including Goldman Sachs, JPMorgan, and BlackRock.
                 </p>
