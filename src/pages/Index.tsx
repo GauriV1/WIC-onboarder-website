@@ -101,24 +101,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Alumni & Partners */}
-      <section className="py-16 px-4 bg-muted/30">
-        <div className="container max-w-6xl mx-auto text-center">
-          <h2 className="mb-8">Alumni & Partners</h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Our graduates work at leading financial institutions and continue to support our mission.
-          </p>
-          
-          {/* Placeholder for alumni logos/quotes */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 opacity-60">
-            {["Goldman Sachs", "JPMorgan", "BlackRock", "Vanguard"].map((company, index) => (
-              <div key={index} className="p-4 border border-border/30 rounded-lg">
-                <div className="text-sm font-medium">{company}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };
