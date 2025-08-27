@@ -53,10 +53,10 @@ export default function Join() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-16 px-4 stripe-bg animate-geometric">
+      <section className="py-16 px-4 hexagon-bg animate-geometric">
         <div className="relative container max-w-4xl mx-auto text-center">
           <h1 className="mb-6">Join WIC</h1>
-          <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+          <p className="text-xl text-black leading-relaxed mb-8 font-medium">
             No prior experience required — bring curiosity and commitment!
           </p>
           <Badge variant="secondary" className="text-base px-4 py-2">
@@ -70,7 +70,7 @@ export default function Join() {
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">Why Join WIC?</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-black max-w-2xl mx-auto font-medium">
               WIC offers a unique opportunity to gain practical finance experience while building 
               lasting professional relationships and developing critical analytical skills.
             </p>
@@ -88,7 +88,7 @@ export default function Join() {
                   <CardTitle className="text-xl">{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-black leading-relaxed font-medium">
                     {benefit.description}
                   </p>
                 </CardContent>
@@ -103,7 +103,7 @@ export default function Join() {
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">Application Process</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-black max-w-2xl mx-auto font-medium">
               Our selection process is designed to identify students who are intellectually curious, 
               collaborative, and committed to learning.
             </p>
@@ -124,7 +124,7 @@ export default function Join() {
                   <CardTitle className="text-lg">{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-black leading-relaxed font-medium">
                     {item.description}
                   </p>
                 </CardContent>
@@ -139,7 +139,7 @@ export default function Join() {
         <div className="container max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">Express Your Interest</h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-black font-medium">
               Ready to learn more about WIC? Let us know you're interested.
             </p>
           </div>
@@ -153,7 +153,7 @@ export default function Join() {
         <div className="container max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">Commitment & Expectations</h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-black font-medium">
               What we expect from members and what you can expect from us.
             </p>
           </div>
@@ -169,23 +169,23 @@ export default function Join() {
               <CardContent>
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-start gap-2">
-                    <span className="text-muted-foreground">•</span>
+                    <span className="text-black">•</span>
                     <span>Contribute in weekly meetings (Wednesdays 12-1 PM in Maxey 207)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-muted-foreground">•</span>
+                    <span className="text-black">•</span>
                     <span>Complete research assignments when assigned</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-muted-foreground">•</span>
+                    <span className="text-black">•</span>
                     <span>Present on interesting economic and financial concepts</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-muted-foreground">•</span>
+                    <span className="text-black">•</span>
                     <span>Participate in discussions and maintain learning environment</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-muted-foreground">•</span>
+                    <span className="text-black">•</span>
                     <span>Time commitment: 1 hour/week for members, max 2 hours for board</span>
                   </li>
                 </ul>
@@ -202,23 +202,23 @@ export default function Join() {
               <CardContent>
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-start gap-2">
-                    <span className="text-muted-foreground">•</span>
+                    <span className="text-black">•</span>
                     <span>Comprehensive training in financial analysis</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-muted-foreground">•</span>
+                    <span className="text-black">•</span>
                     <span>One-on-one mentorship with experienced members</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-muted-foreground">•</span>
+                    <span className="text-black">•</span>
                     <span>Access to professional research databases</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-muted-foreground">•</span>
+                    <span className="text-black">•</span>
                     <span>Networking opportunities with alumni</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-muted-foreground">•</span>
+                    <span className="text-black">•</span>
                     <span>Career development and interview preparation</span>
                   </li>
                 </ul>

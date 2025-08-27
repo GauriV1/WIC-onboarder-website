@@ -54,7 +54,7 @@ const Index = () => {
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">What We Do</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-black max-w-2xl mx-auto font-medium">
               The Whitman Investment Company student-run actively manages $1.7 million of Whitman College's endowment, providing strong returns and financial education.
             </p>
           </div>
@@ -88,9 +88,9 @@ const Index = () => {
             <CardContent className="text-center space-y-4">
               <div>
                 <h3 className="text-2xl font-semibold">Join WIC</h3>
-                <p className="text-muted-foreground">Applications open each term</p>
+                <p className="text-black font-medium">Applications open each term</p>
               </div>
-              <p className="text-sm text-muted-foreground max-w-md mx-auto">
+              <p className="text-sm text-black max-w-md mx-auto font-medium">
                 Learn about our research process, meet current members, and discover how to apply.
               </p>
               <Button asChild className="btn-modern">

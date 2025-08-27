@@ -26,10 +26,10 @@ export default function Login() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-16 px-4 dot-grid-bg animate-geometric">
+      <section className="py-16 px-4 hexagon-bg animate-geometric">
         <div className="relative container max-w-4xl mx-auto text-center">
           <h1 className="mb-6">Member Login</h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <p className="text-xl text-black leading-relaxed font-medium">
             Access your WIC resources, research materials, and member-only content.
           </p>
         </div>
@@ -78,7 +78,7 @@ export default function Login() {
                 >
                   Forgot your password?
                 </a>
-                <p className="text-xs text-muted-foreground">
+                <p className="text-xs text-black font-medium">
                   New member? Contact leadership for account setup.
                 </p>
               </div>
@@ -92,7 +92,7 @@ export default function Login() {
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">Member Resources</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-black max-w-2xl mx-auto font-medium">
               Once logged in, you'll have access to exclusive WIC resources and tools.
             </p>
           </div>
@@ -109,7 +109,7 @@ export default function Login() {
                   <CardTitle className="text-lg">{resource.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-black leading-relaxed font-medium">
                     {resource.description}
                   </p>
                 </CardContent>
@@ -120,7 +120,7 @@ export default function Login() {
           <div className="text-center mt-12">
             <Card className="border-border/50 glass inline-block">
               <CardContent className="p-6">
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-sm text-black mb-4 font-medium">
                   Not a member yet?
                 </p>
                 <Button asChild variant="outline" className="btn-modern">

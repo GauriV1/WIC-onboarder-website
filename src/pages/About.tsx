@@ -26,10 +26,10 @@ export default function About() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-16 px-4 cube-bg animate-geometric">
+      <section className="py-16 px-4 hexagon-bg animate-geometric">
         <div className="relative container max-w-4xl mx-auto text-center">
           <h1 className="mb-6">About WIC</h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-black leading-relaxed font-medium">
               The primary function of the Whitman Investment Company is to serve as an extension of the course offerings at Whitman College, 
               applying liberal arts education foundations to the practical world of finance.
             </p>
@@ -62,7 +62,7 @@ export default function About() {
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">How We Operate</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-black max-w-2xl mx-auto font-medium">
               Our structured approach combines rigorous research with practical experience and professional mentorship.
             </p>
           </div>
@@ -127,7 +127,7 @@ export default function About() {
         <div className="container max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">Governance & Leadership</h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-black font-medium">
               WIC operates under faculty oversight with student leadership driving day-to-day operations.
             </p>
           </div>
@@ -139,7 +139,7 @@ export default function About() {
                 <CardDescription>Professor Ruoning Han</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-black font-medium">
                   Economics Department. Provides academic leadership, ensures educational objectives are met, 
                   and guides the organization's strategic direction.
                 </p>
@@ -152,7 +152,7 @@ export default function About() {
                 <CardDescription>Elected annually by members</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-black font-medium">
                   President, Vice Presidents, and Sector Leads coordinate research activities, 
                   member development, and external partnerships.
                 </p>
@@ -167,7 +167,7 @@ export default function About() {
         <div className="container max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">Frequently Asked Questions</h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-black font-medium">
               Common questions about joining and participating in WIC.
             </p>
           </div>
@@ -182,7 +182,7 @@ export default function About() {
                 <AccordionTrigger className="text-left">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-black font-medium">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

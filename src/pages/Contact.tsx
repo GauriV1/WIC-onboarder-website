@@ -34,10 +34,10 @@ export default function Contact() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-16 px-4 chevron-bg animate-geometric">
+      <section className="py-16 px-4 hexagon-bg animate-geometric">
         <div className="relative container max-w-4xl mx-auto text-center">
           <h1 className="mb-6">Contact Us</h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <p className="text-xl text-black leading-relaxed font-medium">
             Have questions about WIC? We're here to help. Reach out to learn more about 
             our organization and application process.
           </p>
@@ -56,7 +56,7 @@ export default function Contact() {
                 <CardTitle>Email Us</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-black mb-4 font-medium">
                   For general inquiries and application questions
                 </p>
                 <div className="space-y-1">
@@ -78,7 +78,7 @@ export default function Contact() {
                 <CardTitle>Find Us</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-black mb-4 font-medium">
                   Weekly meetings location
                 </p>
                 <p className="font-medium">Maxey 207<br />Wednesdays 12-1 PM</p>
@@ -93,7 +93,7 @@ export default function Contact() {
                 <CardTitle>Get in Touch</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-black mb-4 font-medium">
                   Questions? Talk to us after the meeting
                 </p>
                 <p className="font-medium">Or contact us anytime</p>
@@ -108,7 +108,7 @@ export default function Contact() {
         <div className="container max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">Send Us a Message</h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-black font-medium">
               Have a specific question? Fill out the form below and we'll get back to you promptly.
             </p>
           </div>
@@ -170,7 +170,7 @@ export default function Contact() {
         <div className="container max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="mb-4">Frequently Asked Questions</h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-black font-medium">
               Quick answers to common questions about WIC membership and activities.
             </p>
           </div>
@@ -185,7 +185,7 @@ export default function Contact() {
                 <AccordionTrigger className="text-left">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-black font-medium">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
