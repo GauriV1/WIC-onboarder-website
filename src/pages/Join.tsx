@@ -53,7 +53,7 @@ export default function Join() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-16 px-4 geometric-bg">
+      <section className="py-16 px-4 stripe-bg">
         <div className="absolute inset-0 bg-background/90" />
         <div className="relative container max-w-4xl mx-auto text-center">
           <h1 className="mb-6">Join WIC</h1>

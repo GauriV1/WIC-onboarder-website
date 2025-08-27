@@ -132,28 +132,50 @@
     @apply bg-background text-foreground font-sans antialiased;
     font-size: 16px;
     line-height: 1.5;
+    background-color: white;
+    color: black;
   }
 
-  /* Modern typography scale */
+  /* Force black text across all elements */
+  h1, h2, h3, h4, h5, h6, p, span, div, a {
+    color: black !important;
+  }
+
+  /* Exception for white text on primary buttons */
+  .btn-primary, [data-variant="primary"] {
+    color: white !important;
+  }
+
+  /* Modern typography scale with black text */
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+    color: black !important;
   }
 
   h2 {
     @apply text-3xl md:text-4xl font-bold tracking-tight;
+    color: black !important;
   }
 
   h3 {
     @apply text-2xl md:text-3xl font-semibold tracking-tight;
+    color: black !important;
   }
 
   h4 {
     @apply text-xl md:text-2xl font-semibold;
+    color: black !important;
+  }
+
+  /* Muted text styling */
+  .text-muted-foreground {
+    color: #262626 !important; /* Dark gray for better readability */
   }
 
   /* Accessibility improvements */
   a {
     @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+    color: black !important;
   }
 
   button {
@@ -163,45 +185,101 @@
 }
 
 @layer components {
-  /* Random geometric background pattern */
+  /* Diagonal Intersecting Lines - Dynamic Grid */
   .geometric-bg {
+    background-color: white;
     background-image: 
-      linear-gradient(60deg, transparent 40%, black 41%, black 43%, transparent 44%),
-      linear-gradient(120deg, transparent 40%, black 41%, black 43%, transparent 44%),
-      linear-gradient(45deg, transparent 40%, black 41%, black 43%, transparent 44%),
-      linear-gradient(135deg, transparent 40%, black 41%, black 43%, transparent 44%),
-      linear-gradient(0deg, transparent 40%, black 41%, black 43%, transparent 44%);
-    background-size: 40px 40px, 35px 35px, 50px 50px, 25px 25px, 45px 45px;
-    background-position: 0 0, 20px 10px, 15px 25px, 5px 15px, 30px 5px;
+      linear-gradient(45deg, black 1px, transparent 1px),
+      linear-gradient(-45deg, black 1px, transparent 1px),
+      linear-gradient(90deg, black 1px, transparent 1px),
+      linear-gradient(0deg, black 1px, transparent 1px);
+    background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+    background-position: 0 0, 0 0, 0 0, 0 0;
+    opacity: 0.06;
   }
 
-  /* Hexagonal cubic pattern inspired by WIC logo */
-  .wic-pattern {
+  /* Hexagonal Honeycomb Pattern */
+  .hexagon-bg {
+    background-color: white;
     background-image: 
-      linear-gradient(30deg, transparent 40%, hsl(0 0% 0% / 0.1) 41%, hsl(0 0% 0% / 0.1) 43%, transparent 44%),
-      linear-gradient(150deg, transparent 40%, hsl(0 0% 0% / 0.1) 41%, hsl(0 0% 0% / 0.1) 43%, transparent 44%),
-      linear-gradient(90deg, transparent 40%, hsl(0 0% 0% / 0.1) 41%, hsl(0 0% 0% / 0.1) 43%, transparent 44%),
-      radial-gradient(circle at 50% 50%, hsl(0 0% 0% / 0.05) 1px, transparent 1px);
-    background-size: 60px 35px, 60px 35px, 30px 60px, 20px 20px;
-    background-position: 0 0, 30px 17px, 15px 0, 0 0;
-    opacity: 0.8;
+      radial-gradient(circle at 25% 25%, black 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, transparent 2px, black 3px, transparent 4px),
+      linear-gradient(60deg, transparent 40%, black 41%, black 42%, transparent 43%),
+      linear-gradient(-60deg, transparent 40%, black 41%, black 42%, transparent 43%);
+    background-size: 40px 35px, 40px 35px, 20px 35px, 20px 35px;
+    background-position: 0 0, 20px 17px, 0 0, 0 0;
+    opacity: 0.08;
   }
 
-  /* Glass morphism effect */
+  /* Isometric Cube Tessellation */
+  .cube-bg {
+    background-color: white;
+    background-image: 
+      linear-gradient(60deg, black 2px, transparent 2px),
+      linear-gradient(120deg, black 2px, transparent 2px),
+      linear-gradient(0deg, transparent 24px, black 25px, black 26px, transparent 27px);
+    background-size: 60px 36px, 60px 36px, 30px 60px;
+    background-position: 0 0, 30px 18px, 15px 0;
+    opacity: 0.07;
+  }
+
+  /* Alternative: Subtle Dotted Grid */
+  .dot-grid-bg {
+    background-color: white;
+    background-image: 
+      radial-gradient(circle, black 1px, transparent 1px);
+    background-size: 25px 25px;
+    opacity: 0.05;
+  }
+
+  /* Modern Striped Pattern */
+  .stripe-bg {
+    background-color: white;
+    background-image: 
+      linear-gradient(45deg, transparent 40%, black 41%, black 42%, transparent 43%),
+      linear-gradient(-45deg, transparent 40%, black 41%, black 42%, transparent 43%);
+    background-size: 30px 30px, 30px 30px;
+    background-position: 0 0, 15px 15px;
+    opacity: 0.06;
+  }
+
+  /* Glass morphism effect with black border */
   .glass {
-    @apply backdrop-blur-sm bg-background/80 border border-border/50;
+    @apply backdrop-blur-sm bg-background/95 border border-border/50;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   }
 
-  /* Modern button base */
+  /* Modern button with enhanced effects */
   .btn-modern {
     @apply relative overflow-hidden transition-all duration-300 transform-gpu;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
 
   .btn-modern:hover {
     @apply scale-105;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
 
   .btn-modern:active {
     @apply scale-95;
+  }
+
+  /* Animated underline for links */
+  .link-underline {
+    @apply relative;
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-black scale-x-0 origin-right transition-transform duration-300;
+  }
+
+  .link-underline:hover::after {
+    @apply scale-x-100 origin-left;
+  }
+
+  /* Professional card hover effect */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
   }
 }

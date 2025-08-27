@@ -26,7 +26,7 @@ export default function Login() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-16 px-4 geometric-bg">
+      <section className="py-16 px-4 dot-grid-bg">
         <div className="absolute inset-0 bg-background/90" />
         <div className="relative container max-w-4xl mx-auto text-center">
           <h1 className="mb-6">Member Login</h1>
