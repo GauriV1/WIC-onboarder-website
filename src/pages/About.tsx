@@ -7,7 +7,7 @@ export default function About() {
   const faqs = [
     {
       question: "What is the time commitment?",
-      answer: "Members typically spend 5-8 hours per week on WIC activities, including weekly meetings, research work, and special events. We understand students have multiple commitments and work with you to balance your involvement."
+      answer: "Members commit about 1 hour per week for weekly meetings from 12-1 PM in Maxey 207. Board members may spend up to 2 hours per week with additional responsibilities. We understand students have multiple commitments."
     },
     {
       question: "Who can join WIC?",
@@ -19,7 +19,7 @@ export default function About() {
     },
     {
       question: "When do you recruit new members?",
-      answer: "We recruit new members each semester. Fall recruitment typically occurs in September, and spring recruitment in January. Application deadlines and process details are announced via our events and website."
+      answer: "New members are recruited at the beginning of each term. We encourage interested students to attend at least 3 meetings and submit an interest form. Board positions are contingent upon openings and availability."
     }
   ];
 
@@ -30,10 +30,10 @@ export default function About() {
         <div className="absolute inset-0 bg-background/90" />
         <div className="relative container max-w-4xl mx-auto text-center">
           <h1 className="mb-6">About WIC</h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            The Whitman Investment Company is a student-run organization focused on rigorous research, 
-            risk awareness, and professional growth in the world of finance and investing.
-          </p>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              The primary function of the Whitman Investment Company is to serve as an extension of the course offerings at Whitman College, 
+              applying liberal arts education foundations to the practical world of finance.
+            </p>
         </div>
       </section>
 
@@ -49,9 +49,9 @@ export default function About() {
             </CardHeader>
             <CardContent>
               <p className="text-lg text-center leading-relaxed">
-                WIC exists to provide Whitman College students with hands-on experience in financial analysis, 
-                investment research, and portfolio management while fostering intellectual curiosity, ethical 
-                decision-making, and professional development in a collaborative learning environment.
+                The Whitman Investment Company student-run actively manages $1.4 million of Whitman College's endowment. 
+                We invest in companies across all sectors with the goal to provide strong returns for the college and 
+                a strong financial education for students attending.
               </p>
             </CardContent>
           </Card>
@@ -136,12 +136,12 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="border-border/50 glass">
               <CardHeader>
-                <CardTitle>Faculty Advisor</CardTitle>
-                <CardDescription>Professor Daniel Han</CardDescription>
+                <CardTitle>Faculty Leader</CardTitle>
+                <CardDescription>Professor Ruoning Han</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Economics Department. Provides oversight, ensures educational objectives are met, 
+                  Economics Department. Provides academic leadership, ensures educational objectives are met, 
                   and guides the organization's strategic direction.
                 </p>
               </CardContent>

@@ -5,56 +5,36 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ExternalLink } from "lucide-react";
 
 export default function Teams() {
-  const leadership = [
+  const currentLeadership = [
     {
-      name: "Sarah Chen",
-      role: "President",
-      bio: "Senior Economics major focusing on behavioral finance and ESG investing.",
-      initials: "SC"
+      name: "Daniel Virula",
+      role: "CEO",
+      bio: "Leading WIC's strategic direction and portfolio management for Spring 2025.",
+      initials: "DV"
     },
     {
-      name: "Michael Rodriguez",
-      role: "Vice President",
-      bio: "Junior Mathematics-Economics major with interests in quantitative analysis.",
-      initials: "MR"
+      name: "Abd Rahmoun",
+      role: "COO",
+      bio: "Overseeing operations and member coordination for Spring 2025.",
+      initials: "AR"
     },
     {
-      name: "Emma Thompson",
-      role: "Research Director",
-      bio: "Senior Biology major exploring biotech and healthcare investments.",
-      initials: "ET"
+      name: "Aiden Guenther",
+      role: "CFO",
+      bio: "Managing financial operations and compliance for Spring 2025.",
+      initials: "AG"
     }
   ];
 
   const divisions = [
     {
-      name: "Equities Research",
-      description: "Fundamental analysis of public companies across all market capitalizations",
-      focus: [
-        "Financial statement analysis",
-        "Industry and competitive positioning",
-        "Valuation modeling (DCF, comparables)",
-        "Management assessment"
-      ]
-    },
-    {
-      name: "Macro Strategy",
-      description: "Top-down analysis of economic trends and their market implications",
+      name: "Economics Research",
+      description: "Macroeconomic analysis and market trend evaluation",
       focus: [
         "Economic indicator analysis",
-        "Central bank policy impact",
-        "Sector rotation strategies",
-        "Currency and commodity trends"
-      ]
-    },
-    {
-      name: "Quantitative & Tech",
-      description: "Data-driven investment strategies and financial technology analysis",
-      focus: [
-        "Statistical analysis and backtesting",
-        "Alternative data sources",
-        "Fintech and disruption themes",
-        "Risk modeling and attribution"
+        "Market cycle assessment",
+        "Policy impact evaluation",
+        "Sector performance correlation"
       ]
     },
     {
@@ -63,8 +43,28 @@ export default function Teams() {
       focus: [
         "Sustainability metrics analysis",
         "Stakeholder impact assessment",
-        "Regulatory compliance evaluation",
+        "ESG risk evaluation",
         "Long-term value creation"
+      ]
+    },
+    {
+      name: "Fixed Income",
+      description: "Bond market analysis and credit research",
+      focus: [
+        "Interest rate environment analysis",
+        "Credit risk assessment",
+        "Yield curve positioning",
+        "Duration and convexity modeling"
+      ]
+    },
+    {
+      name: "Private and Equity Markets",
+      description: "Private investment opportunities and equity market analysis",
+      focus: [
+        "Private equity deal analysis",
+        "Venture capital trends",
+        "Public equity research",
+        "Alternative investment strategies"
       ]
     }
   ];
@@ -87,15 +87,15 @@ export default function Teams() {
       <section className="py-16 px-4">
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="mb-4">Leadership Team</h2>
+            <h2 className="mb-4">Spring 2025 Leadership Team</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our student leaders coordinate research activities, mentor new members, and maintain 
-              relationships with alumni and industry partners.
+              Our current student leaders coordinate research activities and mentor members. 
+              The Fall 2025 roster is being finalized for the upcoming academic year.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {leadership.map((member, index) => (
+            {currentLeadership.map((member, index) => (
               <Card key={index} className="border-border/50 glass text-center">
                 <CardHeader>
                   <div className="flex justify-center mb-4">
@@ -171,12 +171,12 @@ export default function Teams() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="border-border/50 glass">
               <CardHeader>
-                <CardTitle>Faculty Advisor</CardTitle>
-                <CardDescription>Professor Daniel Han, Economics Department</CardDescription>
+                <CardTitle>Faculty Leader</CardTitle>
+                <CardDescription>Professor Ruoning Han, Economics Department</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-muted-foreground">
-                  Provides academic oversight and ensures WIC's activities align with educational 
+                  Provides academic leadership and ensures WIC's activities align with educational 
                   objectives while maintaining appropriate risk management practices.
                 </p>
                 <a 

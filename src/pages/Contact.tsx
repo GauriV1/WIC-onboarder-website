@@ -19,7 +19,7 @@ export default function Contact() {
     },
     {
       question: "How much time does WIC require?",
-      answer: "Members typically spend 5-8 hours per week on WIC activities, including our weekly 90-minute meeting, research work, and occasional special events. We understand students have multiple commitments and work with you to balance involvement."
+      answer: "Members commit about 1 hour per week for our Wednesday meetings (12-1 PM in Maxey 207). Board members may spend up to 2 hours per week with additional responsibilities. We understand students have multiple commitments."
     },
     {
       question: "Do you offer summer opportunities?",
@@ -60,12 +60,20 @@ export default function Contact() {
                 <p className="text-muted-foreground mb-4">
                   For general inquiries and application questions
                 </p>
-                <a 
-                  href="mailto:wic@whitman.edu"
-                  className="text-primary hover:text-primary/80 transition-colors font-medium"
-                >
-                  wic@whitman.edu
-                </a>
+                <div className="space-y-1">
+                  <a 
+                    href="mailto:vaidyag@whitman.edu"
+                    className="block text-primary hover:text-primary/80 transition-colors font-medium"
+                  >
+                    vaidyag@whitman.edu
+                  </a>
+                  <a 
+                    href="mailto:guenthea@whitman.edu"
+                    className="block text-primary hover:text-primary/80 transition-colors font-medium"
+                  >
+                    guenthea@whitman.edu
+                  </a>
+                </div>
               </CardContent>
             </Card>
 
@@ -78,9 +86,9 @@ export default function Contact() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Weekly meetings and office hours
+                  Weekly meetings location
                 </p>
-                <p className="font-medium">Reid Campus Center<br />Economics Department</p>
+                <p className="font-medium">Maxey 207<br />Wednesdays 12-1 PM</p>
               </CardContent>
             </Card>
 

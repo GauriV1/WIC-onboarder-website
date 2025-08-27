@@ -1,8 +1,8 @@
 import { Layout } from "@/components/Layout/Layout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Users, BookOpen, TrendingUp, Clock, FileText } from "lucide-react";
+import { InterestForm } from "@/components/ui/interest-form";
+import { CheckCircle, Users, BookOpen, TrendingUp, Clock } from "lucide-react";
 
 export default function Join() {
   const benefits = [
@@ -26,27 +26,27 @@ export default function Join() {
   const process = [
     {
       step: 1,
-      title: "Attend Info Session",
-      description: "Learn about WIC's mission, structure, and expectations. Meet current members and ask questions.",
-      timing: "September 10th, 7:00 PM"
+      title: "Express Interest",
+      description: "Submit our interest form to let us know you'd like to learn more about WIC.",
+      timing: "Anytime"
     },
     {
       step: 2,
-      title: "Submit Application",
-      description: "Complete our application form including academic background, interest in finance, and availability.",
-      timing: "Due October 1st"
+      title: "Attend Meetings",
+      description: "Present and show up to at least 3 weekly meetings to get a feel for our work.",
+      timing: "Wednesdays 12-1 PM"
     },
     {
       step: 3,
-      title: "Interview & Case Study",
-      description: "30-minute conversation with current members plus a brief analytical exercise. No finance background required.",
-      timing: "October 5-8"
+      title: "Apply for Membership",
+      description: "After attending meetings, apply for formal membership. New members are recruited at the beginning of each term.",
+      timing: "Beginning of term"
     },
     {
       step: 4,
-      title: "Onboarding",
-      description: "If selected, join our orientation program and begin your journey with a mentor assignment.",
-      timing: "October 15th start"
+      title: "Board Positions",
+      description: "Board member positions are contingent upon openings and availability.",
+      timing: "As available"
     }
   ];
 
@@ -61,7 +61,7 @@ export default function Join() {
             No prior experience required — bring curiosity and commitment!
           </p>
           <Badge variant="secondary" className="text-base px-4 py-2">
-            Fall 2024 Applications Open
+            New Members Recruited Each Term
           </Badge>
         </div>
       </section>
@@ -135,48 +135,17 @@ export default function Join() {
         </div>
       </section>
 
-      {/* Application Form */}
+      {/* Interest Form */}
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="mb-4">Apply Now</h2>
+            <h2 className="mb-4">Express Your Interest</h2>
             <p className="text-lg text-muted-foreground">
-              Ready to start your investment journey? Submit your application by October 1st.
+              Ready to learn more about WIC? Let us know you're interested.
             </p>
           </div>
 
-          <Card className="border-border/50 glass">
-            <CardHeader className="text-center">
-              <CardTitle className="flex items-center justify-center gap-2">
-                <FileText className="h-5 w-5" />
-                Fall 2024 Application
-              </CardTitle>
-              <CardDescription>
-                Complete the form below to begin your WIC application
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="text-center space-y-6">
-              <div className="space-y-4">
-                <p className="text-sm text-muted-foreground">
-                  Our application includes questions about your academic background, 
-                  interest in finance, and availability for WIC activities.
-                </p>
-                <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
-                  <Clock className="h-4 w-4" />
-                  <span>Estimated completion time: 15-20 minutes</span>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <Button size="lg" className="btn-modern min-w-[200px]">
-                  Open Application Form
-                </Button>
-                <p className="text-xs text-muted-foreground">
-                  Form will open in a new window via Google Forms
-                </p>
-              </div>
-            </CardContent>
-          </Card>
+          <InterestForm />
         </div>
       </section>
 
@@ -202,23 +171,23 @@ export default function Join() {
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-muted-foreground">•</span>
-                    <span>Attend weekly meetings (Wednesdays 7-8:30 PM)</span>
+                    <span>Contribute in weekly meetings (Wednesdays 12-1 PM in Maxey 207)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-muted-foreground">•</span>
-                    <span>Complete assigned research projects on time</span>
+                    <span>Complete research assignments when assigned</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-muted-foreground">•</span>
-                    <span>Participate actively in discussions and peer reviews</span>
+                    <span>Present on interesting economic and financial concepts</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-muted-foreground">•</span>
-                    <span>Maintain academic performance standards</span>
+                    <span>Participate in discussions and maintain learning environment</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-muted-foreground">•</span>
-                    <span>Contribute to WIC's collaborative learning environment</span>
+                    <span>Time commitment: 1 hour/week for members, max 2 hours for board</span>
                   </li>
                 </ul>
               </CardContent>
