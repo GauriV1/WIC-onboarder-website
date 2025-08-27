@@ -187,7 +187,7 @@
   }
 
   /* Remove any semi-transparent overlays */
-  .bg-background\\/90, .bg-muted\\/30 {
+  .bg-background\/90, .bg-muted\/30 {
     background: transparent !important;
   }
 }
