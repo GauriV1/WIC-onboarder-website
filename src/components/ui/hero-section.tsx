@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import Spline from '@splinetool/react-spline';
 import { Link } from "react-router-dom";
 interface HeroSectionProps {
   title: string;
@@ -16,20 +15,13 @@ interface HeroSectionProps {
 
 export function HeroSection({ title, subtitle, primaryCTA, secondaryCTA }: HeroSectionProps) {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center px-4 overflow-hidden">
-      {/* Spline Background */}
-      <div className="absolute inset-0 z-0">
-        <Spline
-          scene="https://prod.spline.design/a0B09PlrBkPLfoAI/scene.splinecode" 
-        />
-      </div>
-      
-      <div className="relative z-10 text-center max-w-4xl mx-auto space-y-8">
+    <section className="py-24 px-4 geometric-bg">
+      <div className="container max-w-4xl mx-auto text-center space-y-8">
         <div className="space-y-4">
-          <h1 className="font-bold tracking-tight text-white drop-shadow-lg">
+          <h1 className="font-bold tracking-tight">
             {title}
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             {subtitle}
           </p>
         </div>
@@ -38,7 +30,7 @@ export function HeroSection({ title, subtitle, primaryCTA, secondaryCTA }: HeroS
           <Button 
             asChild 
             size="lg" 
-            className="btn-modern min-w-[200px] text-base font-semibold bg-white text-black hover:bg-white/90 shadow-lg"
+            className="btn-modern min-w-[200px] text-base font-semibold"
           >
             <Link to={primaryCTA.href}>{primaryCTA.text}</Link>
           </Button>
@@ -48,7 +40,7 @@ export function HeroSection({ title, subtitle, primaryCTA, secondaryCTA }: HeroS
               asChild 
               variant="outline" 
               size="lg" 
-              className="btn-modern min-w-[200px] text-base font-semibold border-white text-white hover:bg-white hover:text-black shadow-lg"
+              className="btn-modern min-w-[200px] text-base font-semibold"
             >
               <Link to={secondaryCTA.href}>{secondaryCTA.text}</Link>
             </Button>
