@@ -5,7 +5,7 @@ import { StatsStrip } from "@/components/ui/stats-strip";
 import { FeatureCard } from "@/components/ui/feature-card";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-
+import { Link } from "react-router-dom";
 const Index = () => {
   const stats = [
     { label: "Invested", value: "$1.7M+" },
@@ -94,7 +94,7 @@ const Index = () => {
                 Learn about our research process, hear from current members, and discover how to apply for the spring semester.
               </p>
               <Button asChild className="btn-modern">
-                <a href="/events">View All Events</a>
+                <Link to="/events">View All Events</Link>
               </Button>
             </CardContent>
           </Card>

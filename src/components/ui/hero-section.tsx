@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Spline from '@splinetool/react-spline';
-
+import { Link } from "react-router-dom";
 interface HeroSectionProps {
   title: string;
   subtitle: string;
@@ -40,7 +40,7 @@ export function HeroSection({ title, subtitle, primaryCTA, secondaryCTA }: HeroS
             size="lg" 
             className="btn-modern min-w-[200px] text-base font-semibold bg-white text-black hover:bg-white/90 shadow-lg"
           >
-            <a href={primaryCTA.href}>{primaryCTA.text}</a>
+            <Link to={primaryCTA.href}>{primaryCTA.text}</Link>
           </Button>
           
           {secondaryCTA && (
@@ -50,7 +50,7 @@ export function HeroSection({ title, subtitle, primaryCTA, secondaryCTA }: HeroS
               size="lg" 
               className="btn-modern min-w-[200px] text-base font-semibold border-white text-white hover:bg-white hover:text-black shadow-lg"
             >
-              <a href={secondaryCTA.href}>{secondaryCTA.text}</a>
+              <Link to={secondaryCTA.href}>{secondaryCTA.text}</Link>
             </Button>
           )}
         </div>

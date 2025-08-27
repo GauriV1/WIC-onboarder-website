@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ExternalLink } from "lucide-react";
-
+import { Link } from "react-router-dom";
 export default function Teams() {
   const currentLeadership = [
     {
@@ -199,12 +199,12 @@ export default function Teams() {
                   Our alumni working in finance provide mentorship, guest lectures, and career 
                   guidance. Current mentors work at firms including Goldman Sachs, JPMorgan, and BlackRock.
                 </p>
-                <a 
-                  href="/contact" 
+                <Link 
+                  to="/contact" 
                   className="inline-flex items-center text-sm text-primary hover:text-primary/80 transition-colors"
                 >
                   Connect with Mentors <ExternalLink className="ml-1 h-3 w-3" />
-                </a>
+                </Link>
               </CardContent>
             </Card>
           </div>

@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Users, Lock, FileText, Calendar } from "lucide-react";
-
+import { Link } from "react-router-dom";
 export default function Login() {
   const memberResources = [
     {
@@ -125,7 +125,7 @@ export default function Login() {
                   Not a member yet?
                 </p>
                 <Button asChild variant="outline" className="btn-modern">
-                  <a href="/join">Learn About Joining WIC</a>
+                  <Link to="/join">Learn About Joining WIC</Link>
                 </Button>
               </CardContent>
             </Card>
