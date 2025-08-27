@@ -2,7 +2,6 @@ import { Layout } from "@/components/Layout/Layout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Users, Target, BookOpen } from "lucide-react";
-import Spline from '@splinetool/react-spline';
 
 export default function About() {
   const faqs = [
@@ -27,16 +26,11 @@ export default function About() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative py-16 px-4 min-h-[60vh] flex items-center justify-center overflow-hidden">
-        {/* Spline Background */}
-        <div className="absolute inset-0 z-0">
-          <Spline
-            scene="https://prod.spline.design/a0B09PlrBkPLfoAI/scene.splinecode" 
-          />
-        </div>
-        <div className="relative z-10 container max-w-4xl mx-auto text-center">
-          <h1 className="mb-6 text-white drop-shadow-lg">About WIC</h1>
-            <p className="text-xl text-white/90 leading-relaxed drop-shadow-md">
+      <section className="py-16 px-4 geometric-bg">
+        <div className="absolute inset-0 bg-background/90" />
+        <div className="relative container max-w-4xl mx-auto text-center">
+          <h1 className="mb-6">About WIC</h1>
+            <p className="text-xl text-muted-foreground leading-relaxed">
               The primary function of the Whitman Investment Company is to serve as an extension of the course offerings at Whitman College, 
               applying liberal arts education foundations to the practical world of finance.
             </p>
