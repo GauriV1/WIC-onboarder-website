@@ -27,7 +27,7 @@ const Index = () => {
     },
     {
       title: "Career Preparation",
-      description: "Professional development through mentorship, networking events, and skill-building workshops with industry professionals.",
+      description: "Professional development through mentorship, networking opportunities, and skill-building workshops with industry professionals.",
       icon: <Users className="h-6 w-6" />,
     },
   ];
@@ -39,7 +39,7 @@ const Index = () => {
         title="Investing, the Whitman way."
         subtitle="We analyze businesses, practice disciplined decision-making, and learn by doing in a collaborative, student-run environment."
         primaryCTA={{ text: "Join WIC", href: "/join" }}
-        secondaryCTA={{ text: "See Events", href: "/events" }}
+        secondaryCTA={{ text: "Learn More", href: "/about" }}
       />
 
       {/* Stats Strip */}
@@ -72,29 +72,29 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Next Event */}
+      {/* Call to Action */}
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto">
           <Card className="border-border/50 glass">
             <CardHeader className="text-center">
               <CardTitle className="flex items-center justify-center gap-2">
-                <Calendar className="h-5 w-5" />
-                Next Event
+                <Users className="h-5 w-5" />
+                Ready to Get Started?
               </CardTitle>
               <CardDescription>
-                Don't miss our upcoming information session
+                Join our community of student investors and start your finance journey
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center space-y-4">
               <div>
-                <h3 className="text-2xl font-semibold">Fall 2024 Info Session</h3>
-                <p className="text-muted-foreground">Tuesday, September 10th • 7:00 PM • Reid 103</p>
+                <h3 className="text-2xl font-semibold">Join WIC</h3>
+                <p className="text-muted-foreground">Applications open each term</p>
               </div>
               <p className="text-sm text-muted-foreground max-w-md mx-auto">
-                Learn about our research process, hear from current members, and discover how to apply for the spring semester.
+                Learn about our research process, meet current members, and discover how to apply.
               </p>
               <Button asChild className="btn-modern">
-                <Link to="/events">View All Events</Link>
+                <Link to="/join">Learn How to Join</Link>
               </Button>
             </CardContent>
           </Card>

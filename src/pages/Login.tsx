@@ -14,7 +14,7 @@ export default function Login() {
     {
       icon: <Calendar className="h-5 w-5" />,
       title: "Meeting Calendar",
-      description: "View upcoming meetings, deadlines, and member-only events"
+      description: "View upcoming meetings and important deadlines for members"
     },
     {
       icon: <Users className="h-5 w-5" />,

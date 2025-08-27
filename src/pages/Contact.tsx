@@ -26,7 +26,7 @@ export default function Contact() {
       answer: "While WIC doesn't meet during summer break, we maintain an active alumni network that often helps members find internships. We also provide interview preparation and networking opportunities throughout the academic year."
     },
     {
-      question: "How do I stay updated on WIC news and events?",
+      question: "How do I stay updated on WIC news?",
       answer: "Follow our website for the latest updates, attend our information sessions, and connect with us via email. We also maintain relationships with campus career services to ensure interested students are informed about opportunities."
     }
   ];
@@ -40,7 +40,7 @@ export default function Contact() {
           <h1 className="mb-6">Contact Us</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
             Have questions about WIC? We're here to help. Reach out to learn more about 
-            our organization, application process, or upcoming events.
+            our organization and application process.
           </p>
         </div>
       </section>
@@ -142,7 +142,7 @@ export default function Contact() {
                   <SelectContent>
                     <SelectItem value="application">Application Process</SelectItem>
                     <SelectItem value="membership">Membership Information</SelectItem>
-                    <SelectItem value="events">Events & Calendar</SelectItem>
+                    <SelectItem value="meetings">Meetings & Deadlines</SelectItem>
                     <SelectItem value="alumni">Alumni Relations</SelectItem>
                     <SelectItem value="partnerships">Partnership Opportunities</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
