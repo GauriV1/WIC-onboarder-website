@@ -207,7 +207,6 @@
       linear-gradient(0deg, black 1px, transparent 1px);
     background-size: 40px 23px, 40px 23px, 20px 40px;
     background-position: 0 0, 20px 11.5px, 10px 0;
-    opacity: 0.8;
   }
 
   /* Remove any background overlays */
