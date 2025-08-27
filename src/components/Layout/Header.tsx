@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import wicLogo from "@/assets/wic-logo.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -24,11 +23,9 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-          <img 
-            src={wicLogo} 
-            alt="WIC Logo" 
-            className="h-8 w-8"
-          />
+          <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
+            <TrendingUp className="h-5 w-5 text-primary-foreground" />
+          </div>
           <span className="text-xl font-bold tracking-tight">WIC</span>
         </Link>
 
