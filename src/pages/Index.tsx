@@ -55,7 +55,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="mb-4">What We Do</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              The Whitman Investment Company student-run actively manages $1.4 million of Whitman College's endowment, providing strong returns and financial education.
+              The Whitman Investment Company student-run actively manages $1.7 million of Whitman College's endowment, providing strong returns and financial education.
             </p>
           </div>
           

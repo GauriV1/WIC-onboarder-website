@@ -34,7 +34,7 @@ Previous Finance Experience: ${formData.experience}
 Why interested in WIC: ${formData.interest}
     `);
     
-    const mailtoLink = `mailto:vaidyag@whitman.edu,guenthea@whitman.edu?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:asencioj@whitman.edu?subject=${subject}&body=${body}`;
     
     // Open email client
     window.location.href = mailtoLink;

@@ -62,16 +62,10 @@ export default function Contact() {
                 </p>
                 <div className="space-y-1">
                   <a 
-                    href="mailto:vaidyag@whitman.edu"
+                    href="mailto:asencioj@whitman.edu"
                     className="block text-primary hover:text-primary/80 transition-colors font-medium"
                   >
-                    vaidyag@whitman.edu
-                  </a>
-                  <a 
-                    href="mailto:guenthea@whitman.edu"
-                    className="block text-primary hover:text-primary/80 transition-colors font-medium"
-                  >
-                    guenthea@whitman.edu
+                    asencioj@whitman.edu
                   </a>
                 </div>
               </CardContent>
@@ -97,13 +91,13 @@ export default function Contact() {
                 <div className="flex justify-center mb-4">
                   <Clock className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle>Office Hours</CardTitle>
+                <CardTitle>Get in Touch</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Available for questions and mentorship
+                  Questions? Talk to us after the meeting
                 </p>
-                <p className="font-medium">Tuesdays 3-5 PM<br />Or by appointment</p>
+                <p className="font-medium">Or contact us anytime</p>
               </CardContent>
             </Card>
           </div>

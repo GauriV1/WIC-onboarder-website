@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* Pure black and white base */
+    /* Spline-compatible colors - white background with black text */
     --background: 0 0% 100%;
     --foreground: 0 0% 0%;
 
@@ -26,9 +26,9 @@
     --secondary: 0 0% 96%;
     --secondary-foreground: 0 0% 0%;
 
-    /* Muted tones */
+    /* Muted tones - darker for visibility on Spline */
     --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted-foreground: 0 0% 20%;
 
     /* Accent - very light gray */
     --accent: 0 0% 98%;
@@ -79,7 +79,7 @@
   }
 
   .dark {
-    /* Dark mode - inverted black/white */
+    /* Dark mode with Spline compatibility */
     --background: 0 0% 0%;
     --foreground: 0 0% 100%;
 
@@ -96,7 +96,7 @@
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 10%;
-    --muted-foreground: 0 0% 60%;
+    --muted-foreground: 0 0% 80%;
 
     --accent: 0 0% 8%;
     --accent-foreground: 0 0% 100%;

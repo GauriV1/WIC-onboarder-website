@@ -28,44 +28,39 @@ export default function Teams() {
 
   const divisions = [
     {
-      name: "Economics Research",
+      name: "Economic Research",
       description: "Macroeconomic analysis and market trend evaluation",
-      focus: [
-        "Economic indicator analysis",
-        "Market cycle assessment",
-        "Policy impact evaluation",
-        "Sector performance correlation"
-      ]
+      head: "Mal",
+      analyst: "Nathan",
+      intern: "Burhan"
     },
     {
-      name: "ESG Integration",
+      name: "ESG",
       description: "Environmental, social, and governance factors in investment decisions",
-      focus: [
-        "Sustainability metrics analysis",
-        "Stakeholder impact assessment",
-        "ESG risk evaluation",
-        "Long-term value creation"
-      ]
+      head: "Bethel",
+      analyst: "",
+      intern: "James"
     },
     {
       name: "Fixed Income",
       description: "Bond market analysis and credit research",
-      focus: [
-        "Interest rate environment analysis",
-        "Credit risk assessment",
-        "Yield curve positioning",
-        "Duration and convexity modeling"
-      ]
+      head: "Brendan",
+      analyst: "Ruth",
+      intern: ""
     },
     {
       name: "Private and Equity Markets",
       description: "Private investment opportunities and equity market analysis",
-      focus: [
-        "Private equity deal analysis",
-        "Venture capital trends",
-        "Public equity research",
-        "Alternative investment strategies"
-      ]
+      head: "Dylan",
+      analyst: "Arina",
+      intern: "Misheel"
+    },
+    {
+      name: "Portfolio Management",
+      description: "Strategic portfolio oversight and performance analysis",
+      head: "Peter",
+      analyst: "Mateo",
+      intern: "Elbeg"
     }
   ];
 
@@ -141,16 +136,22 @@ export default function Teams() {
                   <CardDescription>{division.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider">
-                    Key Focus Areas
-                  </h4>
-                  <ul className="space-y-2">
-                    {division.focus.map((item, itemIndex) => (
-                      <li key={itemIndex} className="text-sm text-muted-foreground">
-                        • {item}
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="space-y-3">
+                    <div className="grid grid-cols-3 gap-4 text-sm">
+                      <div>
+                        <p className="font-semibold text-xs uppercase tracking-wider mb-1">Head</p>
+                        <p className="text-muted-foreground">{division.head || "TBD"}</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-xs uppercase tracking-wider mb-1">Analyst</p>
+                        <p className="text-muted-foreground">{division.analyst || "TBD"}</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-xs uppercase tracking-wider mb-1">Intern</p>
+                        <p className="text-muted-foreground">{division.intern || "TBD"}</p>
+                      </div>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             ))}
