@@ -1,0 +1,20 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagonal triangular pattern inspired by the uploaded logo -->
+  <g stroke="black" stroke-width="1.5" fill="none">
+    <!-- Top row -->
+    <polygon points="8,4 16,4 12,10.4" />
+    <polygon points="16,4 24,4 20,10.4" />
+    
+    <!-- Second row -->
+    <polygon points="4,10.4 12,10.4 8,16.8" />
+    <polygon points="12,10.4 20,10.4 16,16.8" />
+    <polygon points="20,10.4 28,10.4 24,16.8" />
+    
+    <!-- Third row -->
+    <polygon points="8,16.8 16,16.8 12,23.2" />
+    <polygon points="16,16.8 24,16.8 20,23.2" />
+    
+    <!-- Bottom row -->
+    <polygon points="12,23.2 20,23.2 16,29.6" />
+  </g>
+</svg>

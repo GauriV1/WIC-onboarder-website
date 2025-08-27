@@ -34,13 +34,15 @@ export function HeroSection({
       {backgroundPattern && (
         <div className="absolute inset-0 bg-background/90" />
       )}
+      {/* WIC geometric pattern overlay */}
+      <div className="absolute inset-0 wic-pattern" />
       
       <div className="relative text-center max-w-4xl mx-auto space-y-8">
         <div className="space-y-4">
-          <h1 className="font-bold tracking-tight text-foreground">
+          <h1 className="font-bold tracking-tight text-black">
             {title}
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-black/80 max-w-2xl mx-auto leading-relaxed">
             {subtitle}
           </p>
         </div>

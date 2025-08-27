@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, TrendingUp } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import wicLogo from "@/assets/wic-logo.svg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -23,10 +24,12 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-          <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-            <TrendingUp className="h-5 w-5 text-primary-foreground" />
-          </div>
-          <span className="text-xl font-bold tracking-tight">WIC</span>
+          <img 
+            src={wicLogo} 
+            alt="WIC Logo" 
+            className="h-8 w-8"
+          />
+          <span className="text-xl font-bold tracking-tight text-black">WIC</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -37,10 +40,10 @@ export function Header() {
               to={item.href}
               className={cn(
                 "px-3 py-2 text-sm font-medium rounded-md transition-colors",
-                "hover:bg-accent hover:text-accent-foreground",
+                "hover:bg-accent hover:text-black",
                 location.pathname === item.href 
-                  ? "bg-accent text-accent-foreground" 
-                  : "text-muted-foreground"
+                  ? "bg-accent text-black" 
+                  : "text-black/70"
               )}
             >
               {item.name}
@@ -70,10 +73,10 @@ export function Header() {
                 to={item.href}
                 className={cn(
                   "block px-3 py-2 text-base font-medium rounded-md transition-colors",
-                  "hover:bg-accent hover:text-accent-foreground",
+                  "hover:bg-accent hover:text-black",
                   location.pathname === item.href 
-                    ? "bg-accent text-accent-foreground" 
-                    : "text-muted-foreground"
+                    ? "bg-accent text-black" 
+                    : "text-black/70"
                 )}
                 onClick={() => setMobileMenuOpen(false)}
               >

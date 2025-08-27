@@ -163,12 +163,25 @@
 }
 
 @layer components {
-  /* Geometric background pattern inspired by logo */
+  /* Geometric background pattern inspired by WIC logo */
   .geometric-bg {
     background-image: 
-      linear-gradient(30deg, transparent 48%, hsl(var(--border)) 49%, hsl(var(--border)) 51%, transparent 52%),
-      linear-gradient(150deg, transparent 48%, hsl(var(--border)) 49%, hsl(var(--border)) 51%, transparent 52%);
-    background-size: 60px 60px;
+      linear-gradient(60deg, transparent 40%, black 41%, black 43%, transparent 44%),
+      linear-gradient(120deg, transparent 40%, black 41%, black 43%, transparent 44%),
+      linear-gradient(0deg, transparent 40%, black 41%, black 43%, transparent 44%);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 0, 10px 17px;
+  }
+
+  /* Hexagonal triangular pattern overlay */
+  .wic-pattern {
+    background-image: 
+      linear-gradient(60deg, transparent 48%, black 49%, black 51%, transparent 52%),
+      linear-gradient(120deg, transparent 48%, black 49%, black 51%, transparent 52%),
+      linear-gradient(0deg, transparent 48%, black 49%, black 51%, transparent 52%);
+    background-size: 30px 52px;
+    background-position: 0 0, 15px 26px, 0 0;
+    opacity: 0.1;
   }
 
   /* Glass morphism effect */
