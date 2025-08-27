@@ -23,6 +23,13 @@ export default function Teams() {
       role: "CFO",
       bio: "Managing financial operations and compliance for Spring 2025.",
       initials: "AG"
+    },
+    {
+      name: "Juan Ascensio",
+      role: "CIO",
+      bio: "Leading technology initiatives and information systems for Spring 2025.",
+      initials: "JA",
+      email: "asencioj@whitman.edu"
     }
   ];
 
@@ -88,7 +95,7 @@ export default function Teams() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {currentLeadership.map((member, index) => (
               <Card key={index} className="border-border/50 glass text-center">
                 <CardHeader>
