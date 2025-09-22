@@ -11,8 +11,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center">
-              {/* Logo space reserved for uploaded file */}
-              <div className="h-6 w-6"></div>
+              <span className="text-lg font-semibold text-black">Whitman Investment Company</span>
             </div>
             <p className="text-sm text-black leading-relaxed">
               Student-managed investing at Whitman College. Research. Discipline. Real-world portfolio experience.

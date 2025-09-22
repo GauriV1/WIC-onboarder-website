@@ -22,8 +22,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-          {/* Logo space reserved for uploaded file */}
-          <div className="h-8 w-8"></div>
+          <span className="text-xl font-bold tracking-tight text-black">Whitman Investment Company</span>
         </Link>
 
         {/* Desktop Navigation */}
