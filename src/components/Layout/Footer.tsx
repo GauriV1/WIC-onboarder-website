@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, ExternalLink, Instagram, Linkedin } from "lucide-react";
-import wicLogo from "@/assets/wic-logo-geometric.png";
+import wicLogo from "@/assets/wic-logo-black.png";
 
 export function Footer() {
   return (
@@ -13,7 +13,7 @@ export function Footer() {
             <div className="flex items-center space-x-3">
               <img 
                 src={wicLogo} 
-                alt="WIC Logo" 
+                alt="WIC logo" 
                 className="h-6 w-auto"
               />
               <span className="text-lg font-semibold text-black">WIC</span>
@@ -36,9 +36,6 @@ export function Footer() {
               <Link to="/teams" className="text-sm text-black/70 hover:text-black transition-colors">
                 Teams
               </Link>
-              <Link to="/research" className="text-sm text-black/70 hover:text-black transition-colors">
-                Research
-              </Link>
               <Link to="/portfolio" className="text-sm text-black/70 hover:text-black transition-colors">
                 Portfolio
               </Link>
@@ -48,28 +45,39 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Social Links */}
+          {/* Contact & Social */}
           <div className="space-y-4">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-black">Connect</h4>
-            <div className="flex space-x-4">
-              <a
-                href="https://www.instagram.com/whitmaninvestmentcompany?igsh=MXVibnd0MzJvNzVxdg=="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 text-black/70 hover:text-black transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A18563143&keywords=whitman%20investment%20company&origin=RICH_QUERY_SUGGESTION&position=1&searchId=84bdb9ee-7495-46f5-8a81-5ee8afab3b73&sid=zr*&spellCorrectionEnabled=false"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 text-black/70 hover:text-black transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
+            <div className="space-y-3">
+              <div>
+                <p className="text-sm text-black/70">Email:</p>
+                <a 
+                  href="mailto:rahmouna@whitman.edu" 
+                  className="text-sm text-black hover:text-black/70 transition-colors font-medium"
+                >
+                  rahmouna@whitman.edu
+                </a>
+              </div>
+              <div className="flex space-x-4">
+                <a
+                  href="https://www.instagram.com/whitmaninvestmentcompany?igsh=MXVibnd0MzJvNzVxdg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 text-black/70 hover:text-black transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A18563143&keywords=whitman%20investment%20company&origin=RICH_QUERY_SUGGESTION&position=1&searchId=84bdb9ee-7495-46f5-8a81-5ee8afab3b73&sid=zr*&spellCorrectionEnabled=false"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 text-black/70 hover:text-black transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

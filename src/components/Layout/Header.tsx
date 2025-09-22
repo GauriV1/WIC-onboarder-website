@@ -3,13 +3,12 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import wicLogo from "@/assets/wic-logo-geometric.png";
+import wicLogo from "@/assets/wic-logo-black.png";
 
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Teams", href: "/teams" },
-  { name: "Research", href: "/research" },
   { name: "Portfolio", href: "/portfolio" },
   { name: "Join", href: "/join" },
 ];
@@ -25,8 +24,8 @@ export function Header() {
         <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
           <img 
             src={wicLogo} 
-            alt="WIC Logo" 
-            className="h-8 w-8"
+            alt="WIC logo" 
+            className="h-8 w-auto"
           />
           <span className="text-xl font-bold tracking-tight text-black">WIC</span>
         </Link>
@@ -53,7 +52,7 @@ export function Header() {
 
           {/* View Presentation CTA */}
           <Button asChild size="sm" className="btn-modern">
-            <a href="[DRIVE_PRESENTATION_URL]" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/drive/folders/1Yh6D5eB5WZmR_JL4FpAwaPJCN3k_2XSL?usp=drive_link" target="_blank" rel="noopener noreferrer">
               View Presentation
             </a>
           </Button>
@@ -117,7 +116,7 @@ export function Header() {
             {/* Mobile CTA and Social */}
             <div className="pt-4 border-t border-border/40 space-y-3">
               <Button asChild size="sm" className="btn-modern w-full">
-                <a href="[DRIVE_PRESENTATION_URL]" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/drive/folders/1Yh6D5eB5WZmR_JL4FpAwaPJCN3k_2XSL?usp=drive_link" target="_blank" rel="noopener noreferrer">
                   View Presentation
                 </a>
               </Button>
