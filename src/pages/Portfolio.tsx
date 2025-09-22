@@ -83,7 +83,7 @@ const sectors = [
 ];
 
 const typeColors = {
-  Equity: "default",
+  Equity: "outline",
   ETF: "secondary", 
   REIT: "outline",
   Cash: "destructive"
