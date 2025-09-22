@@ -1,8 +1,9 @@
-import { TrendingUp, Users, BookOpen, Calendar } from "lucide-react";
+import { TrendingUp, Users, BookOpen } from "lucide-react";
 import { Layout } from "@/components/Layout/Layout";
 import { HeroSection } from "@/components/ui/hero-section";
 import { StatsStrip } from "@/components/ui/stats-strip";
 import { FeatureCard } from "@/components/ui/feature-card";
+import { PhotoUploadStrip } from "@/components/ui/photo-upload-strip";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -71,6 +72,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Photo Upload Strip */}
+      <PhotoUploadStrip />
 
       {/* Call to Action */}
       <section className="py-16 px-4">

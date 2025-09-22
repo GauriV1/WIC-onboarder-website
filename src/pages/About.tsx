@@ -1,6 +1,7 @@
 import { Layout } from "@/components/Layout/Layout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { PhotoUploadStrip } from "@/components/ui/photo-upload-strip";
 import { Users, Target, BookOpen } from "lucide-react";
 
 export default function About() {
@@ -161,6 +162,9 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Photo Upload Strip */}
+      <PhotoUploadStrip />
 
       {/* FAQs */}
       <section className="py-16 px-4 bg-muted/30">

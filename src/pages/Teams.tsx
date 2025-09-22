@@ -13,7 +13,7 @@ export default function Teams() {
       initials: "DV"
     },
     {
-      name: "Abd Rahmoun",
+      name: "Abd Alghani Rahmoun",
       role: "COO",
       bio: "Overseeing operations and member coordination for Spring 2025.",
       initials: "AR"
@@ -25,11 +25,11 @@ export default function Teams() {
       initials: "AG"
     },
     {
-      name: "Juan Ascensio",
+      name: "Abd Alghani Rahmoun",
       role: "CIO",
       bio: "Leading technology initiatives and information systems for Spring 2025.",
-      initials: "JA",
-      email: "asencioj@whitman.edu"
+      initials: "AR",
+      email: "abd@[domain].edu"
     }
   ];
 
@@ -116,6 +116,11 @@ export default function Teams() {
                   <p className="text-sm text-black leading-relaxed font-medium">
                     {member.bio}
                   </p>
+                  {member.email && (
+                    <p className="text-xs text-black/70 mt-2 font-medium">
+                      {member.email}
+                    </p>
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -123,12 +128,15 @@ export default function Teams() {
         </div>
       </section>
 
-      {/* Research Divisions */}
+      {/* Structure */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="mb-4">Research Divisions</h2>
-            <p className="text-lg text-black max-w-2xl mx-auto font-medium">
+            <h2 className="mb-4">Structure</h2>
+            <h3 className="text-lg text-black max-w-2xl mx-auto font-medium mb-8">
+              Sector Leads
+            </h3>
+            <p className="text-base text-black max-w-2xl mx-auto font-medium">
               Our research is organized into specialized teams, each focusing on different 
               aspects of investment analysis and market understanding.
             </p>
@@ -146,15 +154,15 @@ export default function Teams() {
                     <div className="grid grid-cols-3 gap-4 text-sm">
                       <div>
                         <p className="font-semibold text-xs uppercase tracking-wider mb-1">Head</p>
-                        <p className="text-black font-medium">{division.head || "TBD"}</p>
+                        <p className="text-black font-medium">{division.head || "Add Head"}</p>
                       </div>
                       <div>
                         <p className="font-semibold text-xs uppercase tracking-wider mb-1">Analyst</p>
-                        <p className="text-black font-medium">{division.analyst || "TBD"}</p>
+                        <p className="text-black font-medium">{division.analyst || "Add Head"}</p>
                       </div>
                       <div>
                         <p className="font-semibold text-xs uppercase tracking-wider mb-1">Intern</p>
-                        <p className="text-black font-medium">{division.intern || "TBD"}</p>
+                        <p className="text-black font-medium">{division.intern || "Add Head"}</p>
                       </div>
                     </div>
                   </div>

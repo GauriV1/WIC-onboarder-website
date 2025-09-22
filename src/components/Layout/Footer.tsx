@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Mail, ExternalLink } from "lucide-react";
+import { Mail, ExternalLink, Instagram, Linkedin } from "lucide-react";
+import wicLogo from "@/assets/wic-logo-black.png";
 
 export function Footer() {
   return (
@@ -9,50 +10,65 @@ export function Footer() {
           
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Whitman Investment Company</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <div className="flex items-center space-x-3">
+              <img 
+                src={wicLogo} 
+                alt="WIC Logo" 
+                className="h-6 w-auto"
+              />
+              <span className="text-lg font-semibold text-black">WIC</span>
+            </div>
+            <p className="text-sm text-black leading-relaxed">
               Student-managed investing at Whitman College. Research. Discipline. Real-world portfolio experience.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-sm font-semibold uppercase tracking-wider">Quick Links</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-black">Quick Links</h4>
             <nav className="flex flex-col space-y-2">
-              <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                About WIC
+              <Link to="/" className="text-sm text-black/70 hover:text-black transition-colors">
+                Home
               </Link>
-              <Link to="/join" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Join Us
+              <Link to="/about" className="text-sm text-black/70 hover:text-black transition-colors">
+                About
               </Link>
-              <Link to="/events" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Events
+              <Link to="/teams" className="text-sm text-black/70 hover:text-black transition-colors">
+                Teams
               </Link>
-              <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Contact
+              <Link to="/research" className="text-sm text-black/70 hover:text-black transition-colors">
+                Research
+              </Link>
+              <Link to="/portfolio" className="text-sm text-black/70 hover:text-black transition-colors">
+                Portfolio
+              </Link>
+              <Link to="/join" className="text-sm text-black/70 hover:text-black transition-colors">
+                Join
               </Link>
             </nav>
           </div>
 
-          {/* Contact */}
+          {/* Social Links */}
           <div className="space-y-4">
-            <h4 className="text-sm font-semibold uppercase tracking-wider">Connect</h4>
-            <div className="space-y-2">
-              <a 
-                href="mailto:wic@whitman.edu" 
-                className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <Mail className="h-4 w-4" />
-                <span>wic@whitman.edu</span>
-              </a>
-              <a 
-                href="https://whitman.edu" 
-                target="_blank" 
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-black">Connect</h4>
+            <div className="flex space-x-4">
+              <a
+                href="https://www.instagram.com/whitmaninvestmentcompany?igsh=MXVibnd0MzJvNzVxdg=="
+                target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="p-2 text-black/70 hover:text-black transition-colors"
+                aria-label="Instagram"
               >
-                <ExternalLink className="h-4 w-4" />
-                <span>Whitman College</span>
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A18563143&keywords=whitman%20investment%20company&origin=RICH_QUERY_SUGGESTION&position=1&searchId=84bdb9ee-7495-46f5-8a81-5ee8afab3b73&sid=zr*&spellCorrectionEnabled=false"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-black/70 hover:text-black transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
               </a>
             </div>
           </div>

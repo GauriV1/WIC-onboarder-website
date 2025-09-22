@@ -1,18 +1,17 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import wicLogo from "@/assets/wic-logo.svg";
+import wicLogo from "@/assets/wic-logo-black.png";
 
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Teams", href: "/teams" },
-  { name: "Events", href: "/events" },
+  { name: "Research", href: "/research" },
+  { name: "Portfolio", href: "/portfolio" },
   { name: "Join", href: "/join" },
-  { name: "Member Login", href: "/login" },
-  { name: "Contact", href: "/contact" },
 ];
 
 export function Header() {
@@ -33,23 +32,54 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-1">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              className={cn(
-                "px-3 py-2 text-sm font-medium rounded-md transition-colors",
-                "hover:bg-accent hover:text-black",
-                location.pathname === item.href 
-                  ? "bg-accent text-black" 
-                  : "text-black/70"
-              )}
+        <div className="hidden md:flex items-center space-x-6">
+          <nav className="flex items-center space-x-1">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={cn(
+                  "px-3 py-2 text-sm font-medium rounded-md transition-colors",
+                  "hover:bg-accent hover:text-black",
+                  location.pathname === item.href 
+                    ? "bg-accent text-black" 
+                    : "text-black/70"
+                )}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </nav>
+
+          {/* View Presentation CTA */}
+          <Button asChild size="sm" className="btn-modern">
+            <a href="[DRIVE_PRESENTATION_URL]" target="_blank" rel="noopener noreferrer">
+              View Presentation
+            </a>
+          </Button>
+
+          {/* Social Icons */}
+          <div className="flex items-center space-x-2">
+            <a
+              href="https://www.instagram.com/whitmaninvestmentcompany?igsh=MXVibnd0MzJvNzVxdg=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-black/70 hover:text-black transition-colors"
+              aria-label="Instagram"
             >
-              {item.name}
-            </Link>
-          ))}
-        </nav>
+              <Instagram className="h-4 w-4" />
+            </a>
+            <a
+              href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A18563143&keywords=whitman%20investment%20company&origin=RICH_QUERY_SUGGESTION&position=1&searchId=84bdb9ee-7495-46f5-8a81-5ee8afab3b73&sid=zr*&spellCorrectionEnabled=false"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-black/70 hover:text-black transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
 
         {/* Mobile menu button */}
         <Button
@@ -83,6 +113,36 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
+            
+            {/* Mobile CTA and Social */}
+            <div className="pt-4 border-t border-border/40 space-y-3">
+              <Button asChild size="sm" className="btn-modern w-full">
+                <a href="[DRIVE_PRESENTATION_URL]" target="_blank" rel="noopener noreferrer">
+                  View Presentation
+                </a>
+              </Button>
+              
+              <div className="flex justify-center space-x-4">
+                <a
+                  href="https://www.instagram.com/whitmaninvestmentcompany?igsh=MXVibnd0MzJvNzVxdg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 text-black/70 hover:text-black transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A18563143&keywords=whitman%20investment%20company&origin=RICH_QUERY_SUGGESTION&position=1&searchId=84bdb9ee-7495-46f5-8a81-5ee8afab3b73&sid=zr*&spellCorrectionEnabled=false"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 text-black/70 hover:text-black transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
           </nav>
         </div>
       )}
