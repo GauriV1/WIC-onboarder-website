@@ -172,15 +172,20 @@ export default function Portfolio() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-2">
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                        Sector
-                      </p>
-                      <p className="text-sm text-black font-medium">
-                        {position.sector}
-                      </p>
+                  <div className="flex items-center justify-between">
+                    <div className="space-y-2">
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                          Sector
+                        </p>
+                        <p className="text-sm text-black font-medium">
+                          {position.sector}
+                        </p>
+                      </div>
                     </div>
+                    <Badge variant="outline" className="bg-white text-black border-black">
+                      {position.sector}
+                    </Badge>
                   </div>
                 </CardContent>
               </Card>
