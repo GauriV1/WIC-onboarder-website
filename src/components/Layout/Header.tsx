@@ -22,7 +22,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-          <span className="text-xl font-bold tracking-tight text-black">Whitman Investment Company</span>
+          <span className="text-sm font-bold tracking-wide text-black uppercase whitespace-nowrap">WHITMAN INVESTMENT COMPANY</span>
         </Link>
 
         {/* Desktop Navigation */}
