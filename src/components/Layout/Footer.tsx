@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, ExternalLink, Instagram, Linkedin } from "lucide-react";
-import wicLogo from "@/assets/wic-logo-black.svg";
+import wicLogo from "@/assets/wic-logo-black.png";
 
 export function Footer() {
   return (
@@ -10,13 +10,12 @@ export function Footer() {
           
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center">
               <img 
                 src={wicLogo} 
                 alt="Whitman Investment Company Logo" 
                 className="h-6 w-auto"
               />
-              <span className="text-lg font-semibold text-black">WIC</span>
             </div>
             <p className="text-sm text-black leading-relaxed">
               Student-managed investing at Whitman College. Research. Discipline. Real-world portfolio experience.
