@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, ExternalLink, Instagram, Linkedin } from "lucide-react";
-import wicLogo from "@/assets/wic-logo-black.png";
+import wicLogo from "@/assets/wic-logo-geometric.png";
 
 export function Footer() {
   return (

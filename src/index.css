@@ -47,6 +47,9 @@
     --radius: 0.375rem;
 
     /* Geometric patterns inspired by logo */
+    --pattern-geometric: 
+      linear-gradient(90deg, transparent 15px, rgba(0,0,0,0.04) 16px, rgba(0,0,0,0.04) 18px, transparent 19px),
+      linear-gradient(180deg, transparent 15px, rgba(0,0,0,0.04) 16px, rgba(0,0,0,0.04) 18px, transparent 19px);
     --geometric-light: 0 0% 98%;
     --geometric-medium: 0 0% 94%;
     --geometric-dark: 0 0% 6%;
@@ -198,11 +201,10 @@
 }
 
 @layer components {
-  /* Isometric Cube Tessellation Pattern */
+  /* Background patterns */
   .geometric-bg, .hexagon-bg, .cube-bg {
-    background-color: white;
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.08'%3E%3Cpath d='M30 0l15 8.66v17.32L30 34.64 15 25.98V8.66L30 0zm0 5.77L18 12.88v12.22l12 6.93 12-6.93V12.88L30 5.77z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    background-size: 60px 60px;
+    background-image: var(--pattern-geometric);
+    background-size: 30px 30px;
   }
   
   .dot-grid-bg, .stripe-bg, .chevron-bg {
