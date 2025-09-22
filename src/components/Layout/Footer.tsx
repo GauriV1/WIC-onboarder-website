@@ -13,7 +13,7 @@ export function Footer() {
             <div className="flex items-center space-x-3">
               <img 
                 src={wicLogo} 
-                alt="WIC logo" 
+                alt="Whitman Investment Company Logo" 
                 className="h-6 w-auto"
               />
               <span className="text-lg font-semibold text-black">WIC</span>

@@ -24,7 +24,7 @@ export function Header() {
         <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
           <img 
             src={wicLogo} 
-            alt="WIC logo" 
+            alt="Whitman Investment Company Logo" 
             className="h-8 w-auto"
           />
           <span className="text-xl font-bold tracking-tight text-black">WIC</span>
