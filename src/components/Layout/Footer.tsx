@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, ExternalLink, Instagram, Linkedin } from "lucide-react";
-import wicLogo from "@/assets/wic-logo-black.png";
+// Logo import will be added when user uploads exact file
 
 export function Footer() {
   return (
@@ -11,11 +11,8 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <img 
-                src={wicLogo} 
-                alt="Whitman Investment Company Logo" 
-                className="h-6 w-auto"
-              />
+              {/* Logo space reserved for uploaded file */}
+              <div className="h-6 w-6"></div>
             </div>
             <p className="text-sm text-black leading-relaxed">
               Student-managed investing at Whitman College. Research. Discipline. Real-world portfolio experience.

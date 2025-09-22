@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import wicLogo from "@/assets/wic-logo-black.png";
+// Logo import will be added when user uploads exact file
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -22,11 +22,8 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-          <img 
-            src={wicLogo} 
-            alt="Whitman Investment Company Logo" 
-            className="h-8 w-auto"
-          />
+          {/* Logo space reserved for uploaded file */}
+          <div className="h-8 w-8"></div>
         </Link>
 
         {/* Desktop Navigation */}
