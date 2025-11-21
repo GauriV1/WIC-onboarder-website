@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 const Index = () => {
   const stats = [
-    { label: "Invested", value: "$1.7M+" },
+    { label: "Invested", value: "$2M+" },
     { label: "Members", value: "25+" },
     { label: "Research Notes", value: "150+" },
     { label: "Sectors Covered", value: "5" },
@@ -56,7 +56,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="mb-4">What We Do</h2>
             <p className="text-lg text-black max-w-2xl mx-auto font-medium">
-              The Whitman Investment Company student-run actively manages $1.7 million of Whitman College's endowment, providing strong returns and financial education.
+              The Whitman Investment Company student-run actively manages more than $2 million of Whitman College's endowment, providing strong returns and financial education.
             </p>
           </div>
           
