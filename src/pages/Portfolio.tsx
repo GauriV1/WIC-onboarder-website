@@ -28,7 +28,6 @@ const positions: Position[] = [
   { ticker: "CAH", company: "CARDINAL HEALTH INC", type: "Equity", sector: "Healthcare" },
   { ticker: "DHR", company: "DANAHER CORP", type: "Equity", sector: "Healthcare" },
   { ticker: "JNJ", company: "JOHNSON & JOHNSON", type: "Equity", sector: "Healthcare" },
-  { ticker: "UNH", company: "UNITEDHEALTH GROUP INC", type: "Equity", sector: "Healthcare" },
   { ticker: "IHI", company: "ISHARES US MEDICAL DEVICES ETF", type: "ETF", sector: "Healthcare" },
   
   // Consumer
