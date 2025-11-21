@@ -18,10 +18,10 @@ export function HeroSection({ title, subtitle, primaryCTA, secondaryCTA }: HeroS
     <section className="py-24 px-4 geometric-bg">
       <div className="container max-w-4xl mx-auto text-center space-y-8">
         <div className="space-y-4">
-          <h1 className="font-bold tracking-tight">
+          <h1 className="font-bold tracking-tight !text-white">
             {title}
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed !text-white">
             {subtitle}
           </p>
         </div>
