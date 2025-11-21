@@ -7,7 +7,7 @@
 @layer base {
   :root {
     /* Whitman College Brand Colors */
-    --background: 0 0% 100%;
+    --background: 194 79% 92%; /* Light Blue Background */
     --foreground: 208 100% 17%; /* Navy Blue #002855 */
 
     /* Card system */
@@ -135,8 +135,8 @@
     @apply font-sans antialiased;
     font-size: 16px;
     line-height: 1.5;
-    background-color: white !important;
-    color: black !important;
+    background-color: hsl(194, 79%, 92%) !important;
+    color: #002855 !important;
   }
 
   /* Navy blue text for Whitman branding */
