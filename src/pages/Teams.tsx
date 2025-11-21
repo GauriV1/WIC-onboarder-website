@@ -76,8 +76,8 @@ export default function Teams() {
       {/* Hero */}
       <section className="py-16 px-4 hexagon-bg animate-geometric">
         <div className="relative container max-w-4xl mx-auto text-center">
-          <h1 className="mb-6">Our Teams</h1>
-          <p className="text-xl text-black leading-relaxed font-medium">
+          <h1 className="mb-6 !text-white">Our Teams</h1>
+          <p className="text-xl leading-relaxed font-medium !text-white">
             Meet the dedicated students and faculty who drive WIC's research excellence 
             and commitment to learning.
           </p>
