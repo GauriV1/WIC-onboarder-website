@@ -201,14 +201,14 @@
 }
 
 @layer components {
-  /* Blue Checkered Background Pattern for Hero */
+  /* Navy Blue Checkered Background Pattern for Hero */
   .geometric-bg, .hexagon-bg, .cube-bg {
-    background-color: #5BC2E7;
+    background-color: #002855;
     background-image: 
-      linear-gradient(45deg, #7DD1ED 25%, transparent 25%),
-      linear-gradient(-45deg, #7DD1ED 25%, transparent 25%),
-      linear-gradient(45deg, transparent 75%, #7DD1ED 75%),
-      linear-gradient(-45deg, transparent 75%, #7DD1ED 75%);
+      linear-gradient(45deg, #003d7a 25%, transparent 25%),
+      linear-gradient(-45deg, #003d7a 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #003d7a 75%),
+      linear-gradient(-45deg, transparent 75%, #003d7a 75%);
     background-size: 40px 40px;
     background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
   }
