@@ -29,8 +29,8 @@ export default function About() {
       {/* Hero */}
       <section className="py-16 px-4 hexagon-bg animate-geometric">
         <div className="relative container max-w-4xl mx-auto text-center">
-          <h1 className="mb-6">About WIC</h1>
-            <p className="text-xl text-black leading-relaxed font-medium">
+          <h1 className="mb-6 !text-white">About WIC</h1>
+            <p className="text-xl leading-relaxed font-medium !text-white">
               The primary function of the Whitman Investment Company is to serve as an extension of the course offerings at Whitman College, 
               applying liberal arts education foundations to the practical world of finance.
             </p>

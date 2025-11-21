@@ -106,8 +106,8 @@ export default function Portfolio() {
       {/* Hero */}
       <section className="py-16 px-4 geometric-bg">
         <div className="container max-w-4xl mx-auto text-center">
-          <h1 className="mb-6">Portfolio</h1>
-          <p className="text-xl text-black leading-relaxed font-medium">
+          <h1 className="mb-6 !text-white">Portfolio</h1>
+          <p className="text-xl leading-relaxed font-medium !text-white">
             Our current active positions, grouped by sector.
           </p>
         </div>

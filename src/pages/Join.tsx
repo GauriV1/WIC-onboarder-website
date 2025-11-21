@@ -55,8 +55,8 @@ export default function Join() {
       {/* Hero */}
       <section className="py-16 px-4 hexagon-bg animate-geometric">
         <div className="relative container max-w-4xl mx-auto text-center">
-          <h1 className="mb-6">Join WIC</h1>
-          <p className="text-xl text-black leading-relaxed mb-8 font-medium">
+          <h1 className="mb-6 !text-white">Join WIC</h1>
+          <p className="text-xl leading-relaxed mb-8 font-medium !text-white">
             No prior experience required — bring curiosity and commitment!
           </p>
           <Badge variant="secondary" className="text-base px-4 py-2">
