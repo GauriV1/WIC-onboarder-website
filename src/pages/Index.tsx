@@ -11,8 +11,8 @@ const Index = () => {
   const stats = [
     { label: "Invested", value: "$2M+" },
     { label: "Members", value: "25+" },
-    { label: "Research Notes", value: "150+" },
-    { label: "Sectors Covered", value: "5" },
+    { label: "Years of Operations", value: "28" },
+    { label: "Sectors Covered", value: "11+" },
   ];
 
   const features = [

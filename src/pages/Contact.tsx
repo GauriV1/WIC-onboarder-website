@@ -61,10 +61,10 @@ export default function Contact() {
                 </p>
                 <div className="space-y-1">
                   <a 
-                    href="mailto:asencioj@whitman.edu"
+                    href="mailto:vaidyag@whitman.edu"
                     className="block text-primary hover:text-primary/80 transition-colors font-medium"
                   >
-                    asencioj@whitman.edu
+                    vaidyag@whitman.edu
                   </a>
                 </div>
               </CardContent>

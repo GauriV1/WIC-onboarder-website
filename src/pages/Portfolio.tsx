@@ -10,75 +10,68 @@ interface Position {
   ticker: string;
   company: string;
   type: "Equity" | "ETF" | "REIT" | "Cash";
-  sector: string;
+  category: "Core" | "Active" | "Fixed Income" | "Cash";
 }
 
-const positions: Position[] = [
-  // Technology & IT
-  { ticker: "AAPL", company: "APPLE INC", type: "Equity", sector: "Technology & IT" },
-  { ticker: "CHKP", company: "CHECK POINT SOFTWARE T F", type: "Equity", sector: "Technology & IT" },
-  { ticker: "CSCO", company: "CISCO SYS INC", type: "Equity", sector: "Technology & IT" },
-  { ticker: "GOOGL", company: "ALPHABET INC CLASS A", type: "Equity", sector: "Technology & IT" },
-  { ticker: "MSFT", company: "MICROSOFT CORP", type: "Equity", sector: "Technology & IT" },
-  { ticker: "PYPL", company: "PAYPAL HLDGS INC", type: "Equity", sector: "Technology & IT" },
-  { ticker: "QCOM", company: "QUALCOMM INC", type: "Equity", sector: "Technology & IT" },
-  { ticker: "VRT", company: "VERTIV HLDGS CO CLASS A", type: "Equity", sector: "Technology & IT" },
-  
-  // Healthcare
-  { ticker: "CAH", company: "CARDINAL HEALTH INC", type: "Equity", sector: "Healthcare" },
-  { ticker: "DHR", company: "DANAHER CORP", type: "Equity", sector: "Healthcare" },
-  { ticker: "JNJ", company: "JOHNSON & JOHNSON", type: "Equity", sector: "Healthcare" },
-  { ticker: "IHI", company: "ISHARES US MEDICAL DEVICES ETF", type: "ETF", sector: "Healthcare" },
-  
-  // Consumer
-  { ticker: "COST", company: "COSTCO WHSL CORP NEW", type: "Equity", sector: "Consumer" },
-  { ticker: "DIS", company: "DISNEY WALT CO", type: "Equity", sector: "Consumer" },
-  { ticker: "KHC", company: "KRAFT HEINZ CO", type: "Equity", sector: "Consumer" },
-  { ticker: "PG", company: "PROCTER & GAMBLE CO", type: "Equity", sector: "Consumer" },
-  { ticker: "WMT", company: "WALMART INC", type: "Equity", sector: "Consumer" },
-  
-  // Industrials & Transportation
-  { ticker: "GE", company: "GE AEROSPACE", type: "Equity", sector: "Industrials & Transportation" },
-  { ticker: "PCAR", company: "PACCAR INC", type: "Equity", sector: "Industrials & Transportation" },
-  { ticker: "UNP", company: "UNION PAC CORP", type: "Equity", sector: "Industrials & Transportation" },
-  { ticker: "VLTO", company: "VERALTO CORP", type: "Equity", sector: "Industrials & Transportation" },
-  
-  // Energy & Utilities / ESG
-  { ticker: "NEE", company: "NEXTERA ENERGY INC", type: "Equity", sector: "Energy & Utilities" },
-  { ticker: "EPD", company: "ENTERPRISE PRODS PART LP", type: "Equity", sector: "Energy & Utilities" },
-  { ticker: "BGRN", company: "ISHARES USD GREEN BOND ETF", type: "ETF", sector: "Energy & Utilities" },
-  { ticker: "SUSC", company: "ISHARES TRU ESG AWR USD CORP BND ETF", type: "ETF", sector: "Energy & Utilities" },
-  
-  // Telecom
-  { ticker: "T", company: "AT&T INC", type: "Equity", sector: "Telecom" },
-  { ticker: "VZ", company: "VERIZON COMMUNICATIONS I", type: "Equity", sector: "Telecom" },
-  
-  // Financials
-  { ticker: "WFC", company: "WELLS FARGO & CO", type: "Equity", sector: "Financials" },
-  
-  // Real Estate
-  { ticker: "EQR", company: "EQUITY RESIDENTIAL REIT", type: "REIT", sector: "Real Estate" },
-  { ticker: "WY", company: "WEYERHAEUSER CO REIT", type: "REIT", sector: "Real Estate" },
-  
-  // Fixed Income
-  { ticker: "IEF", company: "ISHARES 7–10 YEAR TREASURY BOND ETF", type: "ETF", sector: "Fixed Income" },
-  
-  // Cash
-  { ticker: "CASH", company: "Cash & Cash Investments", type: "Cash", sector: "Cash & Cash Investments" },
+// Core Portfolio
+const corePortfolio: Position[] = [
+  { ticker: "GOOGL", company: "Alphabet", type: "Equity", category: "Core" },
+  { ticker: "AAPL", company: "Apple", type: "Equity", category: "Core" },
+  { ticker: "BA", company: "Boeing", type: "Equity", category: "Core" },
+  { ticker: "COST", company: "Costco", type: "Equity", category: "Core" },
+  { ticker: "GE", company: "GE Aerospace", type: "Equity", category: "Core" },
+  { ticker: "JNJ", company: "Johnson & Johnson", type: "Equity", category: "Core" },
+  { ticker: "MSFT", company: "Microsoft", type: "Equity", category: "Core" },
+  { ticker: "NEE", company: "NextEra Energy", type: "Equity", category: "Core" },
+  { ticker: "PCAR", company: "PACCAR Inc.", type: "Equity", category: "Core" },
+  { ticker: "PG", company: "Proctor & Gamble", type: "Equity", category: "Core" },
+  { ticker: "UNP", company: "Union Pacific", type: "Equity", category: "Core" },
+  { ticker: "VZ", company: "Verizon", type: "Equity", category: "Core" },
+  { ticker: "WMT", company: "Walmart", type: "Equity", category: "Core" },
+  { ticker: "DIS", company: "Walt Disney Co.", type: "Equity", category: "Core" },
+  { ticker: "WFC", company: "Wells Fargo", type: "Equity", category: "Core" },
 ];
 
-const sectors = [
+// Active Portfolio
+const activePortfolio: Position[] = [
+  { ticker: "AXP", company: "American Express", type: "Equity", category: "Active" },
+  { ticker: "T", company: "AT&T", type: "Equity", category: "Active" },
+  { ticker: "CAH", company: "Cardinal Health", type: "Equity", category: "Active" },
+  { ticker: "SCHW", company: "Charles Schwab", type: "Equity", category: "Active" },
+  { ticker: "CHKP", company: "Check Point Software", type: "Equity", category: "Active" },
+  { ticker: "CSCO", company: "Cisco", type: "Equity", category: "Active" },
+  { ticker: "DHR", company: "Danaher Corporation", type: "Equity", category: "Active" },
+  { ticker: "EPD", company: "Enterprise Product Partners", type: "Equity", category: "Active" },
+  { ticker: "EQR", company: "Equity Residential", type: "REIT", category: "Active" },
+  { ticker: "IHI", company: "iShares U.S. Medical Devices ETF", type: "ETF", category: "Active" },
+  { ticker: "KHC", company: "Kraft-Heinz Company", type: "Equity", category: "Active" },
+  { ticker: "PYPL", company: "Paypal", type: "Equity", category: "Active" },
+  { ticker: "QCOM", company: "Qualcomm", type: "Equity", category: "Active" },
+  { ticker: "VLTO", company: "Veralto", type: "Equity", category: "Active" },
+  { ticker: "VRT", company: "Vertiv", type: "Equity", category: "Active" },
+  { ticker: "WY", company: "Weyerhaeuser", type: "REIT", category: "Active" },
+];
+
+// Fixed Income
+const fixedIncome: Position[] = [
+  { ticker: "IEF", company: "iShares 7-10 Year Treasury Bond ETF", type: "ETF", category: "Fixed Income" },
+  { ticker: "SUSC", company: "iShares ESG USD Corp. Bond ETF", type: "ETF", category: "Fixed Income" },
+  { ticker: "BGRN", company: "iShares Global Green Bond ETF", type: "ETF", category: "Fixed Income" },
+];
+
+// Cash & Cash Equivalents
+const cashEquivalents: Position[] = [
+  { ticker: "CASH", company: "Cash & Money Market", type: "Cash", category: "Cash" },
+];
+
+const allPositions = [...corePortfolio, ...activePortfolio, ...fixedIncome, ...cashEquivalents];
+
+const categories = [
   "All",
-  "Technology & IT",
-  "Healthcare", 
-  "Consumer",
-  "Industrials & Transportation",
-  "Energy & Utilities",
-  "Telecom",
-  "Financials",
-  "Real Estate",
+  "Core",
+  "Active",
   "Fixed Income",
-  "Cash & Cash Investments"
+  "Cash"
 ];
 
 const typeColors = {
@@ -88,18 +81,103 @@ const typeColors = {
   Cash: "destructive"
 } as const;
 
+const categoryColors = {
+  Core: "default",
+  Active: "secondary",
+  "Fixed Income": "outline",
+  Cash: "destructive"
+} as const;
+
 export default function Portfolio() {
-  const [selectedSector, setSelectedSector] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredPositions = positions.filter(position => {
-    const matchesSector = selectedSector === "All" || position.sector === selectedSector;
+  const filteredPositions = allPositions.filter(position => {
+    const matchesCategory = selectedCategory === "All" || position.category === selectedCategory;
     const matchesSearch = 
       position.ticker.toLowerCase().includes(searchQuery.toLowerCase()) ||
       position.company.toLowerCase().includes(searchQuery.toLowerCase());
     
-    return matchesSector && matchesSearch;
+    return matchesCategory && matchesSearch;
   });
+
+  const getCategoryPositions = (category: string) => {
+    switch (category) {
+      case "Core":
+        return corePortfolio;
+      case "Active":
+        return activePortfolio;
+      case "Fixed Income":
+        return fixedIncome;
+      case "Cash":
+        return cashEquivalents;
+      default:
+        return [];
+    }
+  };
+
+  const renderCategorySection = (categoryName: string, positions: Position[]) => {
+    const filtered = positions.filter(position => {
+      const matchesSearch = 
+        position.ticker.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        position.company.toLowerCase().includes(searchQuery.toLowerCase());
+      return matchesSearch;
+    });
+
+    if (filtered.length === 0 && searchQuery) return null;
+
+    return (
+      <div key={categoryName} className="mb-12">
+        <div className="flex items-center justify-between mb-6">
+          <div>
+            <h2 className="text-2xl font-bold mb-2">{categoryName} Portfolio</h2>
+            <p className="text-sm text-muted-foreground">
+              {filtered.length} {filtered.length === 1 ? 'position' : 'positions'}
+            </p>
+          </div>
+          <Badge variant={categoryColors[categoryName as keyof typeof categoryColors] || "outline"} className="text-sm px-4 py-2">
+            Total Value: <span className="font-semibold">Calculated</span>
+          </Badge>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filtered.map((position, index) => (
+            <Card key={index} className="border-border/50 glass">
+              <CardHeader className="pb-3">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="text-lg font-bold">{position.ticker}</CardTitle>
+                    <p className="text-sm text-black font-medium mt-1">
+                      {position.company}
+                    </p>
+                  </div>
+                  <Badge variant={typeColors[position.type]} className="ml-2">
+                    {position.type}
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center justify-between">
+                  <div className="space-y-2">
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                        Category
+                      </p>
+                      <p className="text-sm text-black font-medium">
+                        {position.category}
+                      </p>
+                    </div>
+                  </div>
+                  <Badge variant="outline" className="bg-white text-black border-black">
+                    {position.category}
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    );
+  };
 
   return (
     <Layout>
@@ -108,7 +186,7 @@ export default function Portfolio() {
         <div className="container max-w-4xl mx-auto text-center">
           <h1 className="mb-6 !text-white">Portfolio</h1>
           <p className="text-xl leading-relaxed font-medium !text-white">
-            Our current active positions, grouped by sector.
+            Our current holdings organized by portfolio category.
           </p>
         </div>
       </section>
@@ -130,19 +208,19 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* Sector Filter */}
+            {/* Category Filter */}
             <div className="space-y-3">
-              <h3 className="text-sm font-semibold uppercase tracking-wider">Filter by Sector</h3>
+              <h3 className="text-sm font-semibold uppercase tracking-wider">Filter by Category</h3>
               <div className="flex flex-wrap gap-2">
-                {sectors.map((sector) => (
+                {categories.map((category) => (
                   <Button
-                    key={sector}
-                    variant={selectedSector === sector ? "default" : "outline"}
+                    key={category}
+                    variant={selectedCategory === category ? "default" : "outline"}
                     size="sm"
-                    onClick={() => setSelectedSector(sector)}
+                    onClick={() => setSelectedCategory(category)}
                     className="text-xs"
                   >
-                    {sector}
+                    {category}
                   </Button>
                 ))}
               </div>
@@ -154,42 +232,21 @@ export default function Portfolio() {
       {/* Positions */}
       <section className="py-16 px-4">
         <div className="container max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredPositions.map((position, index) => (
-              <Card key={index} className="border-border/50 glass">
-                <CardHeader className="pb-3">
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <CardTitle className="text-lg font-bold">{position.ticker}</CardTitle>
-                      <p className="text-sm text-black font-medium mt-1">
-                        {position.company}
-                      </p>
-                    </div>
-                    <Badge variant={typeColors[position.type]} className="ml-2">
-                      {position.type}
-                    </Badge>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center justify-between">
-                    <div className="space-y-2">
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                          Sector
-                        </p>
-                        <p className="text-sm text-black font-medium">
-                          {position.sector}
-                        </p>
-                      </div>
-                    </div>
-                    <Badge variant="outline" className="bg-white text-black border-black">
-                      {position.sector}
-                    </Badge>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          {selectedCategory === "All" ? (
+            <>
+              {renderCategorySection("Core", corePortfolio)}
+              {renderCategorySection("Active", activePortfolio)}
+              {renderCategorySection("Fixed Income", fixedIncome)}
+              {renderCategorySection("Cash & Cash Equivalents", cashEquivalents)}
+            </>
+          ) : (
+            <>
+              {renderCategorySection(
+                selectedCategory === "Cash" ? "Cash & Cash Equivalents" : selectedCategory,
+                getCategoryPositions(selectedCategory)
+              )}
+            </>
+          )}
 
           {filteredPositions.length === 0 && (
             <div className="text-center py-12">

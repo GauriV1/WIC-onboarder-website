@@ -49,7 +49,7 @@ export default function About() {
             </CardHeader>
             <CardContent>
               <p className="text-lg text-center leading-relaxed">
-                The Whitman Investment Company student-run actively manages $1.7 million of Whitman College's endowment. 
+                The Whitman Investment Company student-run actively manages $2 million of Whitman College's endowment. 
                 We invest in companies across all sectors with the goal to provide strong returns for the college and 
                 a strong financial education for students attending.
               </p>

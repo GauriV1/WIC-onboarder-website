@@ -47,10 +47,10 @@ export function Footer() {
               <div>
                 <p className="text-sm text-black/70">Email:</p>
                 <a 
-                  href="mailto:rahmouna@whitman.edu" 
+                  href="mailto:vaidyag@whitman.edu" 
                   className="text-sm text-black hover:text-black/70 transition-colors font-medium"
                 >
-                  rahmouna@whitman.edu
+                  vaidyag@whitman.edu
                 </a>
               </div>
               <div className="flex space-x-4">
