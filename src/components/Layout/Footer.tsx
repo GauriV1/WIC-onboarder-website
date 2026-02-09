@@ -55,7 +55,7 @@ export function Footer() {
               </div>
               <div className="flex space-x-4">
                 <a
-                  href="https://www.instagram.com/whitmaninvestmentcompany?igsh=MXVibnd0MzJvNzVxdg=="
+                  href="https://www.instagram.com/whitmaninvest.co/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 text-black/70 hover:text-black transition-colors"
@@ -64,7 +64,7 @@ export function Footer() {
                   <Instagram className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A18563143&keywords=whitman%20investment%20company&origin=RICH_QUERY_SUGGESTION&position=1&searchId=84bdb9ee-7495-46f5-8a81-5ee8afab3b73&sid=zr*&spellCorrectionEnabled=false"
+                  href="https://www.linkedin.com/company/whitman-wic/posts/?feedView=all"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 text-black/70 hover:text-black transition-colors"

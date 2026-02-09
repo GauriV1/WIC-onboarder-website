@@ -21,13 +21,13 @@ export default function Teams() {
     {
       name: "Gauri Vaidya",
       role: "COO",
-      bio: "Overseeing operations and member coordination.",
+      bio: "Overseeing operations and member coordination. Leading technology initiatives.",
       initials: "GV"
     },
     {
       name: "Dylan Koerselman",
       role: "CIO",
-      bio: "Leading technology initiatives and information systems.",
+      bio: "Leading technology initiatives and information systems. Campus communications.",
       initials: "DK"
     }
   ];
@@ -59,8 +59,8 @@ export default function Teams() {
     },
     {
       name: "Ben",
-      role: "Position TBD",
-      bio: "Board member position to be determined.",
+      role: "Portfolio Management",
+      bio: "Strategic portfolio oversight and performance analysis.",
       initials: "B"
     }
   ];
@@ -70,27 +70,27 @@ export default function Teams() {
       name: "Economic Research",
       description: "Macroeconomic analysis and market trend evaluation",
       head: "Beatrice",
-      analyst: "",
+      analyst: "Sophia",
       intern: ""
     },
     {
       name: "ESG",
       description: "Environmental, social, and governance factors in investment decisions",
-      head: "Sophia",
+      head: "Jett",
       analyst: "",
       intern: ""
     },
     {
       name: "Stock Research",
       description: "In-depth stock analysis and equity research",
-      head: "Jett",
-      analyst: "",
+      head: "Brendan",
+      analyst: "Turner",
       intern: ""
     },
     {
       name: "Portfolio Management",
       description: "Strategic portfolio oversight and performance analysis",
-      head: "Brendan Turner",
+      head: "Ben",
       analyst: "",
       intern: ""
     }
@@ -216,15 +216,15 @@ export default function Teams() {
                     <div className="grid grid-cols-3 gap-4 text-sm">
                       <div>
                         <p className="font-semibold text-xs uppercase tracking-wider mb-1">Head</p>
-                        <p className="text-black font-medium">{division.head || "Add Head"}</p>
+                        <p className="text-black font-medium">{division.head || ""}</p>
                       </div>
                       <div>
                         <p className="font-semibold text-xs uppercase tracking-wider mb-1">Analyst</p>
-                        <p className="text-black font-medium">{division.analyst || "Add Head"}</p>
+                        <p className="text-black font-medium">{division.analyst || ""}</p>
                       </div>
                       <div>
                         <p className="font-semibold text-xs uppercase tracking-wider mb-1">Intern</p>
-                        <p className="text-black font-medium">{division.intern || "Add Head"}</p>
+                        <p className="text-black font-medium">{division.intern || ""}</p>
                       </div>
                     </div>
                   </div>
@@ -248,8 +248,26 @@ export default function Teams() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="border-border/50 glass">
               <CardHeader>
-                <CardTitle>Faculty Leader</CardTitle>
-                <CardDescription>Professor Ruoning Han, Economics Department</CardDescription>
+                <CardTitle>
+                  <a 
+                    href="https://www.linkedin.com/in/ruoninghan/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Faculty Leader
+                  </a>
+                </CardTitle>
+                <CardDescription>
+                  <a 
+                    href="https://www.linkedin.com/in/ruoninghan/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Professor Ruoning Han, Economics Department
+                  </a>
+                </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-black font-medium">
@@ -257,7 +275,9 @@ export default function Teams() {
                   objectives while maintaining appropriate risk management practices.
                 </p>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/ruoninghan/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-sm text-primary hover:text-primary/80 transition-colors"
                 >
                   Faculty Profile <ExternalLink className="ml-1 h-3 w-3" />

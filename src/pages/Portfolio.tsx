@@ -11,45 +11,46 @@ interface Position {
   company: string;
   type: "Equity" | "ETF" | "REIT" | "Cash";
   category: "Core" | "Active" | "Fixed Income" | "Cash";
+  sector?: string;
 }
 
 // Core Portfolio
 const corePortfolio: Position[] = [
-  { ticker: "GOOGL", company: "Alphabet", type: "Equity", category: "Core" },
-  { ticker: "AAPL", company: "Apple", type: "Equity", category: "Core" },
-  { ticker: "BA", company: "Boeing", type: "Equity", category: "Core" },
-  { ticker: "COST", company: "Costco", type: "Equity", category: "Core" },
-  { ticker: "GE", company: "GE Aerospace", type: "Equity", category: "Core" },
-  { ticker: "JNJ", company: "Johnson & Johnson", type: "Equity", category: "Core" },
-  { ticker: "MSFT", company: "Microsoft", type: "Equity", category: "Core" },
-  { ticker: "NEE", company: "NextEra Energy", type: "Equity", category: "Core" },
-  { ticker: "PCAR", company: "PACCAR Inc.", type: "Equity", category: "Core" },
-  { ticker: "PG", company: "Proctor & Gamble", type: "Equity", category: "Core" },
-  { ticker: "UNP", company: "Union Pacific", type: "Equity", category: "Core" },
-  { ticker: "VZ", company: "Verizon", type: "Equity", category: "Core" },
-  { ticker: "WMT", company: "Walmart", type: "Equity", category: "Core" },
-  { ticker: "DIS", company: "Walt Disney Co.", type: "Equity", category: "Core" },
-  { ticker: "WFC", company: "Wells Fargo", type: "Equity", category: "Core" },
+  { ticker: "GOOGL", company: "Alphabet", type: "Equity", category: "Core", sector: "Technology" },
+  { ticker: "AAPL", company: "Apple", type: "Equity", category: "Core", sector: "Technology" },
+  { ticker: "BA", company: "Boeing", type: "Equity", category: "Core", sector: "Industrials" },
+  { ticker: "COST", company: "Costco", type: "Equity", category: "Core", sector: "Consumer" },
+  { ticker: "GE", company: "GE Aerospace", type: "Equity", category: "Core", sector: "Industrials" },
+  { ticker: "JNJ", company: "Johnson & Johnson", type: "Equity", category: "Core", sector: "Healthcare" },
+  { ticker: "MSFT", company: "Microsoft", type: "Equity", category: "Core", sector: "Technology" },
+  { ticker: "NEE", company: "NextEra Energy", type: "Equity", category: "Core", sector: "Utilities" },
+  { ticker: "PCAR", company: "PACCAR Inc.", type: "Equity", category: "Core", sector: "Industrials" },
+  { ticker: "PG", company: "Proctor & Gamble", type: "Equity", category: "Core", sector: "Consumer" },
+  { ticker: "UNP", company: "Union Pacific", type: "Equity", category: "Core", sector: "Industrials" },
+  { ticker: "VZ", company: "Verizon", type: "Equity", category: "Core", sector: "Telecom" },
+  { ticker: "WMT", company: "Walmart", type: "Equity", category: "Core", sector: "Consumer" },
+  { ticker: "DIS", company: "Walt Disney Co.", type: "Equity", category: "Core", sector: "Consumer" },
+  { ticker: "WFC", company: "Wells Fargo", type: "Equity", category: "Core", sector: "Financials" },
 ];
 
 // Active Portfolio
 const activePortfolio: Position[] = [
-  { ticker: "AXP", company: "American Express", type: "Equity", category: "Active" },
-  { ticker: "T", company: "AT&T", type: "Equity", category: "Active" },
-  { ticker: "CAH", company: "Cardinal Health", type: "Equity", category: "Active" },
-  { ticker: "SCHW", company: "Charles Schwab", type: "Equity", category: "Active" },
-  { ticker: "CHKP", company: "Check Point Software", type: "Equity", category: "Active" },
-  { ticker: "CSCO", company: "Cisco", type: "Equity", category: "Active" },
-  { ticker: "DHR", company: "Danaher Corporation", type: "Equity", category: "Active" },
-  { ticker: "EPD", company: "Enterprise Product Partners", type: "Equity", category: "Active" },
-  { ticker: "EQR", company: "Equity Residential", type: "REIT", category: "Active" },
-  { ticker: "IHI", company: "iShares U.S. Medical Devices ETF", type: "ETF", category: "Active" },
-  { ticker: "KHC", company: "Kraft-Heinz Company", type: "Equity", category: "Active" },
-  { ticker: "PYPL", company: "Paypal", type: "Equity", category: "Active" },
-  { ticker: "QCOM", company: "Qualcomm", type: "Equity", category: "Active" },
-  { ticker: "VLTO", company: "Veralto", type: "Equity", category: "Active" },
-  { ticker: "VRT", company: "Vertiv", type: "Equity", category: "Active" },
-  { ticker: "WY", company: "Weyerhaeuser", type: "REIT", category: "Active" },
+  { ticker: "AXP", company: "American Express", type: "Equity", category: "Active", sector: "Financials" },
+  { ticker: "T", company: "AT&T", type: "Equity", category: "Active", sector: "Telecom" },
+  { ticker: "CAH", company: "Cardinal Health", type: "Equity", category: "Active", sector: "Healthcare" },
+  { ticker: "SCHW", company: "Charles Schwab", type: "Equity", category: "Active", sector: "Financials" },
+  { ticker: "CHKP", company: "Check Point Software", type: "Equity", category: "Active", sector: "Technology" },
+  { ticker: "CSCO", company: "Cisco", type: "Equity", category: "Active", sector: "Technology" },
+  { ticker: "DHR", company: "Danaher Corporation", type: "Equity", category: "Active", sector: "Healthcare" },
+  { ticker: "EPD", company: "Enterprise Product Partners", type: "Equity", category: "Active", sector: "Energy" },
+  { ticker: "EQR", company: "Equity Residential", type: "REIT", category: "Active", sector: "Real Estate" },
+  { ticker: "IHI", company: "iShares U.S. Medical Devices ETF", type: "ETF", category: "Active", sector: "Healthcare" },
+  { ticker: "KHC", company: "Kraft-Heinz Company", type: "Equity", category: "Active", sector: "Consumer" },
+  { ticker: "PYPL", company: "Paypal", type: "Equity", category: "Active", sector: "Technology" },
+  { ticker: "QCOM", company: "Qualcomm", type: "Equity", category: "Active", sector: "Technology" },
+  { ticker: "VLTO", company: "Veralto", type: "Equity", category: "Active", sector: "Industrials" },
+  { ticker: "VRT", company: "Vertiv", type: "Equity", category: "Active", sector: "Technology" },
+  { ticker: "WY", company: "Weyerhaeuser", type: "REIT", category: "Active", sector: "Real Estate" },
 ];
 
 // Fixed Income
@@ -74,6 +75,19 @@ const categories = [
   "Cash"
 ];
 
+const sectors = [
+  "All",
+  "Technology",
+  "Healthcare",
+  "Consumer",
+  "Industrials",
+  "Financials",
+  "Energy",
+  "Utilities",
+  "Telecom",
+  "Real Estate"
+];
+
 const typeColors = {
   Equity: "outline",
   ETF: "secondary", 
@@ -90,15 +104,17 @@ const categoryColors = {
 
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedSector, setSelectedSector] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredPositions = allPositions.filter(position => {
     const matchesCategory = selectedCategory === "All" || position.category === selectedCategory;
+    const matchesSector = selectedSector === "All" || position.sector === selectedSector;
     const matchesSearch = 
       position.ticker.toLowerCase().includes(searchQuery.toLowerCase()) ||
       position.company.toLowerCase().includes(searchQuery.toLowerCase());
     
-    return matchesCategory && matchesSearch;
+    return matchesCategory && matchesSector && matchesSearch;
   });
 
   const getCategoryPositions = (category: string) => {
@@ -118,10 +134,11 @@ export default function Portfolio() {
 
   const renderCategorySection = (categoryName: string, positions: Position[]) => {
     const filtered = positions.filter(position => {
+      const matchesSector = selectedSector === "All" || position.sector === selectedSector;
       const matchesSearch = 
         position.ticker.toLowerCase().includes(searchQuery.toLowerCase()) ||
         position.company.toLowerCase().includes(searchQuery.toLowerCase());
-      return matchesSearch;
+      return matchesSector && matchesSearch;
     });
 
     if (filtered.length === 0 && searchQuery) return null;
@@ -156,20 +173,25 @@ export default function Portfolio() {
                 </div>
               </CardHeader>
               <CardContent>
-                <div className="flex items-center justify-between">
-                  <div className="space-y-2">
+                <div className="space-y-2">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                      Category
+                    </p>
+                    <p className="text-sm text-black font-medium">
+                      {position.category}
+                    </p>
+                  </div>
+                  {position.sector && (
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                        Category
+                        Sector
                       </p>
                       <p className="text-sm text-black font-medium">
-                        {position.category}
+                        {position.sector}
                       </p>
                     </div>
-                  </div>
-                  <Badge variant="outline" className="bg-white text-black border-black">
-                    {position.category}
-                  </Badge>
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -205,6 +227,24 @@ export default function Portfolio() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="pl-10"
                 />
+              </div>
+            </div>
+
+            {/* Sector Filter */}
+            <div className="space-y-3">
+              <h3 className="text-sm font-semibold uppercase tracking-wider">Filter by Sector</h3>
+              <div className="flex flex-wrap gap-2">
+                {sectors.map((sector) => (
+                  <Button
+                    key={sector}
+                    variant={selectedSector === sector ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => setSelectedSector(sector)}
+                    className="text-xs"
+                  >
+                    {sector}
+                  </Button>
+                ))}
               </div>
             </div>
 

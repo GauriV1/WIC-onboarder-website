@@ -45,17 +45,10 @@ export function Header() {
             ))}
           </nav>
 
-          {/* View Presentation CTA */}
-          <Button asChild size="sm" className="btn-modern">
-            <a href="https://drive.google.com/drive/folders/1Yh6D5eB5WZmR_JL4FpAwaPJCN3k_2XSL?usp=drive_link" target="_blank" rel="noopener noreferrer">
-              View Presentation
-            </a>
-          </Button>
-
           {/* Social Icons */}
           <div className="flex items-center space-x-2">
             <a
-              href="https://www.instagram.com/whitmaninvestmentcompany?igsh=MXVibnd0MzJvNzVxdg=="
+              href="https://www.instagram.com/whitmaninvest.co/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-black/70 hover:text-black transition-colors"
@@ -64,7 +57,7 @@ export function Header() {
               <Instagram className="h-4 w-4" />
             </a>
             <a
-              href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A18563143&keywords=whitman%20investment%20company&origin=RICH_QUERY_SUGGESTION&position=1&searchId=84bdb9ee-7495-46f5-8a81-5ee8afab3b73&sid=zr*&spellCorrectionEnabled=false"
+              href="https://www.linkedin.com/company/whitman-wic/posts/?feedView=all"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-black/70 hover:text-black transition-colors"
@@ -108,17 +101,11 @@ export function Header() {
               </Link>
             ))}
             
-            {/* Mobile CTA and Social */}
-            <div className="pt-4 border-t border-border/40 space-y-3">
-              <Button asChild size="sm" className="btn-modern w-full">
-                <a href="https://drive.google.com/drive/folders/1Yh6D5eB5WZmR_JL4FpAwaPJCN3k_2XSL?usp=drive_link" target="_blank" rel="noopener noreferrer">
-                  View Presentation
-                </a>
-              </Button>
-              
+            {/* Mobile Social */}
+            <div className="pt-4 border-t border-border/40">
               <div className="flex justify-center space-x-4">
                 <a
-                  href="https://www.instagram.com/whitmaninvestmentcompany?igsh=MXVibnd0MzJvNzVxdg=="
+                  href="https://www.instagram.com/whitmaninvest.co/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 text-black/70 hover:text-black transition-colors"
@@ -127,7 +114,7 @@ export function Header() {
                   <Instagram className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A18563143&keywords=whitman%20investment%20company&origin=RICH_QUERY_SUGGESTION&position=1&searchId=84bdb9ee-7495-46f5-8a81-5ee8afab3b73&sid=zr*&spellCorrectionEnabled=false"
+                  href="https://www.linkedin.com/company/whitman-wic/posts/?feedView=all"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 text-black/70 hover:text-black transition-colors"
