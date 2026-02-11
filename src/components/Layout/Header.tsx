@@ -19,7 +19,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 glass">
-      <div className="container flex h-16 items-center justify-between px-4">
+      <div className="w-full flex h-16 items-center justify-between px-6">
         {/* Logo */}
         <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
           <span className="text-sm font-bold tracking-wide text-black uppercase whitespace-nowrap">WHITMAN INVESTMENT COMPANY</span>
