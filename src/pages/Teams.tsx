@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function Teams() {
   const currentLeadership = [
     {
-      name: "Arina Guschina",
+      name: "Arina Gushchina",
       role: "CEO",
       bio: "Leading WIC's strategic direction and portfolio management.",
       initials: "AG"

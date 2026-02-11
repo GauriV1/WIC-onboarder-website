@@ -11,7 +11,7 @@ export default function Contact() {
   const faqs = [
     {
       question: "When is the next recruitment period?",
-      answer: "We recruit new members twice per year: fall recruitment typically occurs in September, and spring recruitment in January. Specific dates and deadlines are announced on our website and through campus channels."
+      answer: "We recruit new members twice per year: fall recruitment typically occurs in September, and spring recruitment in January. To become a member, attend 3 meetings and present once. To retain membership, attend 2/3 of meetings per semester. Specific dates and deadlines are announced on our website and through campus channels."
     },
     {
       question: "What majors are represented in WIC?",

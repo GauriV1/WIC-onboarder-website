@@ -32,14 +32,14 @@ export default function Join() {
     },
     {
       step: 2,
-      title: "Attend Meetings",
-      description: "Present and show up to at least 3 weekly meetings to get a feel for our work.",
+      title: "Attend Meetings & Present",
+      description: "Attend 3 meetings and present once to become a member.",
       timing: "Wednesdays 12-1 PM"
     },
     {
       step: 3,
       title: "Apply for Membership",
-      description: "After attending meetings, apply for formal membership. New members are recruited at the beginning of each term.",
+      description: "After attending 3 meetings and presenting once, apply for formal membership. New members are recruited at the beginning of each term.",
       timing: "Beginning of term"
     },
     {
@@ -168,6 +168,10 @@ export default function Join() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-sm">
+                  <li className="flex items-start gap-2">
+                    <span className="text-black">•</span>
+                    <span>Attend 2/3 of meetings per semester to retain membership</span>
+                  </li>
                   <li className="flex items-start gap-2">
                     <span className="text-black">•</span>
                     <span>Contribute in weekly meetings (Wednesdays 12-1 PM in Maxey 207)</span>

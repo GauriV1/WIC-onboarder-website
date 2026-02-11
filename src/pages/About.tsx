@@ -20,7 +20,7 @@ export default function About() {
     },
     {
       question: "When do you recruit new members?",
-      answer: "New members are recruited at the beginning of each term. We encourage interested students to attend at least 3 meetings and submit an interest form. Board positions are contingent upon openings and availability."
+      answer: "New members are recruited at the beginning of each term. To become a member, attend 3 meetings and present once. To retain membership, attend 2/3 of meetings per semester. Board positions are contingent upon openings and availability."
     }
   ];
 
