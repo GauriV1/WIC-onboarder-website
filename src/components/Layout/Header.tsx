@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/wic-logo-geometric.png";
+// Logo import will be added when user uploads exact file
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -21,12 +21,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 glass">
       <div className="container flex h-16 items-center justify-between px-4">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <img 
-            src={logo} 
-            alt="WIC Logo" 
-            className="h-8 w-8 object-contain"
-          />
+        <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
           <span className="text-sm font-bold tracking-wide text-black uppercase whitespace-nowrap">WHITMAN INVESTMENT COMPANY</span>
         </Link>
 
