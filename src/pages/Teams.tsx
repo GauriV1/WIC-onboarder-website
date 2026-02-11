@@ -34,28 +34,28 @@ export default function Teams() {
 
   const boardMembers = [
     {
-      name: "Beatrice",
-      role: "Head Analyst Intern Economic Research",
-      bio: "Leading economic research analysis and market trend evaluation.",
-      initials: "B"
-    },
-    {
       name: "Sophia",
-      role: "ESG",
-      bio: "Environmental, social, and governance factors in investment decisions.",
+      role: "Economic Research",
+      bio: "Leading economic research analysis and market trend evaluation.",
       initials: "S"
     },
     {
       name: "Jett",
-      role: "Stock Research",
-      bio: "Conducting in-depth stock analysis and equity research.",
+      role: "ESG",
+      bio: "Environmental, social, and governance factors in investment decisions.",
       initials: "J"
     },
     {
-      name: "Brendan Turner",
-      role: "Portfolio Management",
-      bio: "Strategic portfolio oversight and performance analysis.",
-      initials: "BT"
+      name: "Brendan",
+      role: "Stock Research",
+      bio: "Conducting in-depth stock analysis and equity research.",
+      initials: "B"
+    },
+    {
+      name: "Turner",
+      role: "Stock Research",
+      bio: "Conducting in-depth stock analysis and equity research.",
+      initials: "T"
     },
     {
       name: "Ben",
@@ -69,8 +69,8 @@ export default function Teams() {
     {
       name: "Economic Research",
       description: "Macroeconomic analysis and market trend evaluation",
-      head: "Beatrice",
-      analyst: "Sophia",
+      head: "Sophia",
+      analyst: "",
       intern: ""
     },
     {
